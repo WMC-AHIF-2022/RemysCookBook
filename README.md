@@ -71,11 +71,9 @@ Hierbei handelt es sich um ein Login-System, wo die Fam-ID als Schlüssel zum Ei
 
 #### 2.2.2 Workflow
 
-- Erklären Sie hier die internen Abläufe, die für die Umsetzung des Use Cases notwendig sind
-- Verwenden Sie dazu - wenn der Ablauf komplex genug ist - ein `UML Activity Diagram`
-- Beispiel:
+- Bei jeder Eingabe wird das Format auf Gültigkeit und die Existenz überprüft.
 
-<img src="./ACD.jpg">
+<img src="./pictures/signUp.png">
 
 ### 2.3. Use Case Kalenderansicht
 #### 2.3.1 GUI-Design
@@ -85,10 +83,6 @@ Hierbei handelt es sich um ein Login-System, wo die Fam-ID als Schlüssel zum Ei
 Hierbei sieht man das die jeweiligen eingetragenen Menüs für den Tag, die der Main-User bestätigt hat. Die Request werden von dem Main-User unter dem Button "manage Requests" verwaltet. Er kann diese bestätigen und somit das Gericht in den Essensplan hinzufügen oder ablehnen.
 
 #### 2.3.2 Workflow
-
-- Erklären Sie hier die internen Abläufe, die für die Umsetzung des Use Cases notwendig sind
-- Verwenden Sie dazu - wenn der Ablauf komplex genug ist - ein `UML Activity Diagram`
-- Beispiel:
 
 <img src="./ACD.jpg">
 
@@ -102,11 +96,7 @@ Die Rezepte können nach bestimmten Kategorien angezeigt werden.
 
 #### 2.4.2 Workflow
 
-- Erklären Sie hier die internen Abläufe, die für die Umsetzung des Use Cases notwendig sind
-- Verwenden Sie dazu - wenn der Ablauf komplex genug ist - ein `UML Activity Diagram`
-- Beispiel:
-
-<img src="./ACD.jpg">
+- Es werden alle Rezepte, die in die bestimmte Kategorie hineinfallen, vom Server geladen und angezeigt.
 
 ### 2.5. Use Case Einkaufsliste
 
@@ -114,13 +104,9 @@ Die Rezepte können nach bestimmten Kategorien angezeigt werden.
 
 <img src="./pictures/ShoppingList.png" width="200" height="375">
 
-Die einzelenen Zutaten können mit dem Butto hinzugefügt und mit dem Kreis wieder gelöscht werden. 
-
 #### 2.5.2 Workflow
 
-- Erklären Sie hier die internen Abläufe, die für die Umsetzung des Use Cases notwendig sind
-- Verwenden Sie dazu - wenn der Ablauf komplex genug ist - ein `UML Activity Diagram`
-- Beispiel:
+- Die einzelenen Zutaten können mit dem Butto hinzugefügt und mit dem Kreis wieder gelöscht werden. 
 
 <img src="./ACD.jpg">
 

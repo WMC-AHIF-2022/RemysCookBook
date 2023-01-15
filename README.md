@@ -75,6 +75,11 @@ Hierbei handelt es sich um ein Login-System, wo die Fam-ID als Schlüssel zum Ei
 
 <img src="./pictures/signUp.png">
 
+
+- Wenn ein User ein Menü auswählen will, muss das Menü zuerst von dem Main User bestätigt werden, wenn das Menü bestätigt worden ist, sieht man es auf dem Kalender.  Ist dies nicht der Fall bleibt der Kalender leer.
+
+<img src="./pictures/ACD_Menü-hinzufügen.jpg">
+
 ### 2.3. Use Case Kalenderansicht
 #### 2.3.1 GUI-Design
 

@@ -83,7 +83,7 @@ Hierbei handelt es sich um ein Login-System, wo die Fam-ID als Schlüssel zum Ei
 ### 2.3. Use Case Kalenderansicht
 #### 2.3.1 GUI-Design
 
-<img src="./pictures/Kalenderansicht1.jpg" width="200" height="375"> <img src="./pictures/Kalenderansicht2.jpg" width="200" height="375">
+<img src="./pictures/Kalenderansicht1.jpg" width="200" width="200" height="375">
 
 Hierbei sieht man das die jeweiligen eingetragenen Menüs für den Tag, die der Main-User bestätigt hat. Die Request werden von dem Main-User unter dem Button "manage Requests" verwaltet. Er kann diese bestätigen und somit das Gericht in den Essensplan hinzufügen oder ablehnen.
 
@@ -131,6 +131,7 @@ Hier ein Überblick über mögliche nicht-funktionale Anforderungen:
 ### `Usability`: Benutzbarkeitsanforderung
 
 - Wie muss die Software beschaffen sein, damit die Zielgruppe gerne damit arbeitet?
+  - Die Software soll einfach bedienbar sein und für jedes Alter geeignet.
 - Beispiel:
   - Die Software soll dem Erscheinungsbild anderer Produkte des Herstellers entsprechen.
 

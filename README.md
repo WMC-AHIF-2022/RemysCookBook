@@ -75,11 +75,6 @@ Hierbei handelt es sich um ein Login-System, wo die Fam-ID als Schlüssel zum Ei
 
 <img src="./pictures/signUp.png">
 
-
-- Wenn ein User ein Menü auswählen will, muss das Menü zuerst von dem Main User bestätigt werden, wenn das Menü bestätigt worden ist, sieht man es auf dem Kalender.  Ist dies nicht der Fall bleibt der Kalender leer.
-
-<img src="./pictures/ACD_Menü-hinzufügen.jpg">
-
 ### 2.3. Use Case Kalenderansicht
 #### 2.3.1 GUI-Design
 
@@ -89,7 +84,9 @@ Hierbei sieht man das die jeweiligen eingetragenen Menüs für den Tag, die der 
 
 #### 2.3.2 Workflow
 
-<img src="./ACD.jpg">
+<img src="./pictures/ACD_Menü-hinzufügen.jpg">
+
+- Wenn ein User ein Menü auswählen will, muss das Menü zuerst von dem Main User bestätigt werden. Sobald das Menü bestätigt worden ist, wird es auf dem Kalender angezeigt. Ist dies nicht der Fall bleibt der Kalender leer.
 
 ### 2.4. Use Case Rezeptansicht
 
@@ -112,8 +109,6 @@ Die Rezepte können nach bestimmten Kategorien angezeigt werden.
 #### 2.5.2 Workflow
 
 - Die einzelenen Zutaten können mit dem Butto hinzugefügt und mit dem Kreis wieder gelöscht werden. 
-
-<img src="./ACD.jpg">
 
 ## 3. Nicht-funktionale Anforderungen
 

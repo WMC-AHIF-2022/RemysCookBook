@@ -34,13 +34,13 @@ Wir möchten unser Projekt so ähnlich aufbauen wie "myRecipe". Jedoch gefallen 
 ---
 Unser Ziel ist es Familien das Planen und Organisieren ihres Essensplan zu erleichtern. In unserem Anwendungsprogramm sind alle Features vereint.
 
-Es verfügt über eine Kalenderansicht, bei der man mit Hilfe eines Buttons Gerichte für den Tag vorschlagen kann (Request), die der Main-User bestätigt oder nicht. Falls diese Speise noch nicht in der Rezeptliste vorhanden ist, kann es einfach hinzugefügt und mit Sternen von 1- 5 bewertet werden. Die Rezepte sind auch unterteilbar in Kategorien. Favoriten werden mit einem Herz markiert und sind in einer eigenen Liste wieder auffindbar.
+Es verfügt über eine Kalenderansicht, bei der man mit Hilfe eines Buttons Gerichte für den Tag vorschlagen kann , die der Main-User bestätigt, austauscht oder ablehnt. Falls diese Speise noch nicht in der Rezeptliste vorhanden ist, kann es einfach hinzugefügt und mit Sternen von 1- 5 bewertet werden. Die Rezepte sind auch unterteilbar in Kategorien, also filterbar. Als Favoriten werden Rezepte, die mit 5 Sternen bewerten wurden, gespeicher. Diese sind in einer eigenen Liste wieder auffindbar.
 
 Falls Zutaten von dem gewünschten ausgewählten Rezept in einem Haushalt fehlen, kann ganz einfach eine Einkaufsliste, ähnlich wie eine Todo-Liste, erstellt werden. 
 
 Unsere Benutzerverwaltung unterteilt sich in zwei Bereiche. Einen Main-User, welcher den Plan erstellt und Side-Users, die mit einer Fam-ID in den Essensplan einsteigen können. Jedes Mitglied kann Gerichte vorschlagen, jedoch kann nur der Main-User den Essenswunsch schlussendlich festlegen. Er muss es sozusagen bestätigen.
 
-Die Anwendung enthält außerdem ein Maskottchen, das die Benutzer durch die App leitet. Tipps sind durch Klicken auf die Figur erhältlich. Außerdem kann es für die Benutzer random Rezepte vorschlagen, die abgelehnt oder bestätigt werden können. Der Button sieht aus wie ein Glücksrad. 
+Die Anwendung enthält außerdem ein Maskottchen, das die Benutzer durch die App leitet. Menüvorschläge sind durch Klicken auf die Figur erhältlich. 
 
 
 ![MindMap](./pictures/MindMap.png)
@@ -52,15 +52,18 @@ Die Anwendung enthält außerdem ein Maskottchen, das die Benutzer durch die App
 #### 2.1.1. Use Case Diagramm 
 <img src="./pictures/ucd.webp">
 
-- **Main-User:** erstellt den Familien-Account und verwaltet den Kalender mit den Request. Er kann die Speisen akzeptieren und zum Essensplan hinzufügen und verteilt die Rechte an die Youth-User. Außerdem verfügt er über die generellen Rechte wie der Side-User. 
+- **Main-User:** erstellt den Familien-Account und verwaltet den Kalender mit den Menüvorschlägen. Er kann die Speisen akzeptieren und zum Essensplan hinzufügen, ablehnen oder mit einem anderen Vorschlag austauschen. Er kann auch die Youth-User auswählen. Außerdem verfügt er über die generellen Rechte. 
 - **Side-User:** besitzt die generellen Rechte: 
-  - sieht den Kalender
-  - Einkaufsliste bearbeiten (Produkte hinzufügen und löschen)
+  - sieht den Kalender/Rezepte
+  - kann ein Produkt zur Einkaufsliste hinzufügen/löschen 
   - Bearbeiten von Rezepten:
     - hinzufügen
-    - bewerten (Sternen)
-    - abspeichern als Favorit (Herz)
-- **Youth-User:** sieht den Kalender und kann einen Request mit dem gewünschten Produkt, welches er zur Einkaufsliste hinzufügen will, an den Main-User senden. Dies gilt auch für das Hinzufügen eines Menüs zum Essensplan. Er besitzt trotzdem die Rechte um Rezepte zu bewerten und abzuspeichern als Favorit. 
+    - bewerten ( 1-5 Sterne)
+  - Menüvorschlag von Remy erhalten
+  - Rezepte nach einer Kategorie filtern
+- **Youth-User:** 
+  Er besitzt die generellen Rechte ausgenommen der Erstellung, das Ändern und Löschen eines Rezepts.
+  
 ### 2.2. Use Case Account-Erstellung
 
 #### 2.2.1 GUI-Design

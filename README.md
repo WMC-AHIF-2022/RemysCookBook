@@ -43,14 +43,14 @@ Unsere Benutzerverwaltung unterteilt sich in zwei Bereiche. Einen Main-User, wel
 Die Anwendung enthält außerdem ein Maskottchen, das die Benutzer durch die App leitet. Tipps sind durch Klicken auf die Figur erhältlich. Außerdem kann es für die Benutzer random Rezepte vorschlagen, die abgelehnt oder bestätigt werden können. Der Button sieht aus wie ein Glücksrad. 
 
 
-![MindMap](./pictures/ucd.webp)
+![MindMap](./pictures/MindMap.png)
 
 ## 2. Funktionale Anforderungen
 
 ### 2.1. Use Case Überblick
 
 #### 2.1.1. Use Case Diagramm 
-<img src="./pictures/Use-Case-Diagram.png">
+<img src="./pictures/ucd.webp">
 
 - **Main-User:** erstellt den Familien-Account und verwaltet den Kalender mit den Request. Er kann die Speisen akzeptieren und zum Essensplan hinzufügen und verteilt die Rechte an die Youth-User. Außerdem verfügt er über die generellen Rechte wie der Side-User. 
 - **Side-User:** besitzt die generellen Rechte: 

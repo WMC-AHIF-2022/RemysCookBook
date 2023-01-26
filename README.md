@@ -43,7 +43,7 @@ Unsere Benutzerverwaltung unterteilt sich in zwei Bereiche. Einen Main-User, wel
 Die Anwendung enthält außerdem ein Maskottchen, das die Benutzer durch die App leitet. Tipps sind durch Klicken auf die Figur erhältlich. Außerdem kann es für die Benutzer random Rezepte vorschlagen, die abgelehnt oder bestätigt werden können. Der Button sieht aus wie ein Glücksrad. 
 
 
-![MindMap](./pictures/MindMap.png)
+![MindMap](./pictures/ucd.webp)
 
 ## 2. Funktionale Anforderungen
 

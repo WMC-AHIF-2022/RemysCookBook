@@ -50,7 +50,7 @@ Die Anwendung enthält außerdem ein Maskottchen, das die Benutzer durch die App
 ### 2.1. Use Case Überblick
 
 #### 2.1.1. Use Case Diagramm 
-<img src="./pictures/ucd.webp">
+<img src="./pictures/ucd.webp" height="700" width="375">
 
 - **Main-User:** erstellt den Familien-Account und verwaltet den Kalender mit den Menüvorschlägen. Er kann die Speisen akzeptieren und zum Essensplan hinzufügen, ablehnen oder mit einem anderen Vorschlag austauschen. Zusätzlich wählt er unter den Mitgliedern die Youth-User aus. Außerdem verfügt er über die generellen Rechte. 
 - **Side-User:** besitzt die generellen Rechte: 
@@ -94,40 +94,165 @@ Hierbei handelt es sich um ein Login-System, wo die automatisch generierte Fam-I
 
 <img src="./pictures/signUp.png">
 
-### 2.3. Use Case Kalenderansicht
-#### 2.3.1 GUI-Design
+### 2.4. Use Case Ansehen von Speisen im Kalender
+#### 2.4.1 GUI-Design
 
-<img src="./pictures/Kalenderansicht1.jpg" width="200" width="200" height="375">
+<img src="./pictures/Kalenderansicht1.jpg" width="200" height="375">
 
 Hierbei sieht man das die jeweiligen eingetragenen Menüs für den Tag, die der Main-User bestätigt hat. Die Request werden von dem Main-User unter dem Button "manage Requests" verwaltet. Er kann diese bestätigen und somit das Gericht in den Essensplan hinzufügen oder ablehnen.
 
-#### 2.3.2 Workflow
+#### 2.4.2 Workflow
 
 <img src="./pictures/ACD_Menü-hinzufügen.jpg">
 
 - Wenn ein User ein Menü auswählen will, muss das Menü zuerst von dem Main User bestätigt werden. Sobald das Menü bestätigt worden ist, wird es auf dem Kalender angezeigt. Ist dies nicht der Fall bleibt der Kalender leer.
 
-### 2.4. Use Case Rezeptansicht
-
-#### 2.4.1 GUI-Design
-
-<img src="./pictures/rezeptansichten.png">
-
-Die Rezepte können nach bestimmten Kategorien angezeigt werden. 
-
-#### 2.4.2 Workflow
-
-- Es werden alle Rezepte, die in die bestimmte Kategorie hineinfallen, vom Server geladen und angezeigt.
-
-### 2.5. Use Case Einkaufsliste
-
+### 2.5. Use Case Menü für den Essensplan vorschlagen
 #### 2.5.1 GUI-Design
 
-<img src="./pictures/ShoppingList.png" width="200" height="375">
+<img src="./pictures/...">
 
-#### 2.5.2 Workflow
+TODO: Beschreiben
 
-- Die einzelenen Zutaten können mit dem Butto hinzugefügt und mit dem Kreis wieder gelöscht werden. 
+### 2.6. Use Case Akzeptieren/Ablehnen eines Menüvorschlags
+#### 2.6.1 GUI-Design
+
+<img src="./pictures/...">
+
+TODO: Beschreiben
+
+#### 2.6.2 Workflow
+
+<img src="./pictures/...">
+
+- TODO
+
+
+### 2.7. Use Case Austauschen eines Menüvorschlags
+#### 2.7.1 GUI-Design
+
+<img src="./pictures/..." >
+
+TODO
+
+#### 2.3.2 Workflow
+
+<img src="./pictures/...">
+
+TODO
+
+### 2.8. Use Case Ansehen von Rezepten
+#### 2.8.1 GUI-Design
+
+<img src="./pictures/...">
+
+ TODO
+
+### 2.9. Use Case neues Rezept erstellen
+#### 2.9.1 GUI-Design
+
+<img src="./pictures/..." >
+
+TODO
+
+#### 2.9.2 Workflow
+
+<img src="./pictures/...">
+
+TODO
+
+
+### 2.10. Use Case Ändern eines Rezepts
+
+#### 2.10.1 GUI-Design
+
+<img src="./pictures/...">
+
+TODO
+
+
+### 2.11. Use Case Löschen eines Rezepts
+
+#### 2.11.1 GUI-Design
+
+<img src="./pictures/...">
+
+TODO
+
+
+### 2.12. Use Case Bewerten eines Rezepts
+
+#### 2.12.1 GUI-Design
+
+<img src="./pictures/...">
+
+TODO
+
+
+### 2.13. Use Case Ansehen von Lieblingsrezepten (5 Sterne)
+
+#### 2.13.1 GUI-Design
+
+<img src="./pictures/...">
+
+TODO
+
+
+### 2.14. Use Case Filtern von Rezepten
+
+#### 2.14.1 GUI-Design
+
+<img src="./pictures/...">
+
+TODO
+
+
+#### 2.14.2 Workflow
+
+TODO
+
+
+### 2.15 Use Case Erhalten eines Rezeptvorschlags durch Remy
+
+#### 2.15.1 GUI-Design
+
+<img src="./pictures/...">
+
+TODO
+
+
+### 2.16. Use Case Produkt zur Einkaufsliste hinzufügen
+
+#### 2.16.1 GUI-Design
+
+<img src="./pictures/...">
+
+TODO
+
+#### 2.16.2 Workflow
+
+TODO
+
+### 2.17. Use Case Produkt von der  Einkaufsliste löschen
+
+#### 2.17.1 GUI-Design
+
+<img src="./pictures/...">
+
+TODO
+
+#### 2.17.2 Workflow
+
+TODO
+
+
+### 2.18. Use Case Auswahl der Youth-User
+
+#### 2.18.1 GUI-Design
+
+<img src="./pictures/...">
+
+TODO
 
 ## 3. Nicht-funktionale Anforderungen
 

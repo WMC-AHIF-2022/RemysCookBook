@@ -116,15 +116,13 @@ Um einen Menüvorschlag zu machen muss man zuerst auf den Plus-Button in der Kal
 ### 2.6. Use Case Akzeptieren/Ablehnen eines Menüvorschlags
 #### 2.6.1 GUI-Design
 
-<img src="./pictures/...">
 
-TODO: Beschreiben
 
 #### 2.6.2 Workflow
 
-<img src="./pictures/...">
+<img src="./pictures/Menuevorschlag-akzeptieren-ablehnen.jpg">
 
-- TODO
+Der Main-User bekommt eine neue Menürequest für denselben Tag. Er kann ihn entweder ablehnen dann bleibt der alte Menüvorschlag im Kalender. Falls der Main-User den Menüvorschlag annimmt, wird der alte Menüvorschlag gelöscht und der neue kommt zur Kalenderansicht.
 
 
 ### 2.7. Use Case Austauschen eines Menüvorschlags

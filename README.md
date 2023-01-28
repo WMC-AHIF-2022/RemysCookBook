@@ -96,10 +96,14 @@ Hierbei handelt es sich um ein Login-System, wo die automatisch generierte Fam-I
 
 ### 2.3. Use Case Kalenderansicht
 #### 2.3.1 GUI-Design
+## 
+#### Ansehen von Speisen im Kalender:
+<img src="./pictures/Kalenderansicht1.jpg" width="200" height="375">
 
-<img src="./pictures/Kalenderansicht1.jpg" width="200" width="200" height="375">
-
-Hierbei sieht man das die jeweiligen eingetragenen Menüs für den Tag, die der Main-User bestätigt hat. Die Request werden von dem Main-User unter dem Button "manage Requests" verwaltet. Er kann diese bestätigen und somit das Gericht in den Essensplan hinzufügen oder ablehnen.
+Hierbei sieht man das die jeweiligen eingetragenen Menüs für den Tag, die der Main-User bestätigt hat. Die Requests werden von dem Main-User unter dem Button "manage Requests" verwaltet. Er kann diese bestätigen und somit das Gericht in den Essensplan hinzufügen oder ablehnen.
+#### Menüvorschlag:
+<img src="./pictures/Menuevorschlag.jpg">
+Um einen Menüvorschlag zu machen muss man zuerst auf den Plus-Button in der Kalenderansicht drücken. Danach wird man zu einer neuen Seite geführt (Abbildung 2) die alle Rezepte anzeigt, die es gibt, dazu gibt es auch einen Filter für verschiedene Kategorien (Italienisch, Mexikanisch...). Durch einen Klick kommt man auf das Rezept und kann dieses hinzufügen. Hier drückt man wieder auf den Plus Button und ein Kalender wird angezeigt. In dem Kalender kann man das gewünschte Datum auswählen und mit dem Button "Ok" wird ein Request ausgeschickt. 
 
 #### 2.3.2 Workflow
 

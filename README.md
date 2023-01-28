@@ -124,9 +124,9 @@ Um einen Menüvorschlag zu machen muss man zuerst auf den Plus-Button in der Kal
 ### 2.7. Use Case Austauschen eines Menüvorschlags
 #### 2.7.1 GUI-Design
 
-<img src="./pictures/..." >
+<img src="./pictures/Menuevorschlag-austauschen.jpg" width="200" heigth="100">
 
-TODO
+Mit dem Switch Button kann man ein anderes vorgeschlagenes Rezept auswählen.
 
 #### 2.3.2 Workflow
 

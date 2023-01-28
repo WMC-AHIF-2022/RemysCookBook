@@ -150,9 +150,9 @@ Die erste Abbildung ist die Sicht des Youth-Users. Die zweite ist die des Main &
 ### 2.9. Use Case neues Rezept erstellen
 #### 2.9.1 GUI-Design
 
-<img src="./pictures/..." >
+<img src="./pictures/Rezepterstellung.png" >
 
-Nur der Main & "normale" User können ein neues Rezept erstellen.
+Nur der Main & "normale" User können ein neues Rezept erstellen. Dafür drückt man auf das Plus in der rechten unteren Ecke. Dann kommt man auf eine neue Seite (Create Recipe). Hier kann man seine Zutaten und seine ZUbereitung für sein Rezept eingeben und dann auf den Button mit "add recipe" drücken, damit das Rezept erstellt wird.
 
 #### 2.9.2 Workflow
 

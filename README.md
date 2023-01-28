@@ -138,16 +138,21 @@ Der Main-User bekommt eine neue Menürequest für denselben Tag. Er kann ihn ent
 ### 2.8. Use Case Ansehen von Rezepten
 #### 2.8.1 GUI-Design
 
-<img src="./pictures/...">
+1. Youth-User Ansicht
 
- TODO
+<img src="./pictures/Rezeptansicht.png">
+
+2. Main-User Ansicht (mit + zum hinzufügen von Rezept)
+
+<img src="./pictures/Rezeptansicht-MainUser.png">
+Die erste Abbildung ist die Sicht des Youth-Users. Die zweite ist die des Main & "normalen" Users, da die beiden neue Rezepte erstellen können (siehe 2.9). 
 
 ### 2.9. Use Case neues Rezept erstellen
 #### 2.9.1 GUI-Design
 
 <img src="./pictures/..." >
 
-TODO
+Nur der Main & "normale" User können ein neues Rezept erstellen.
 
 #### 2.9.2 Workflow
 

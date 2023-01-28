@@ -217,13 +217,11 @@ TODO
 
 #### 2.16.1 GUI-Design
 
-<img src="./pictures/..." width="200" heigth="100">
-
-TODO
+<img src="./pictures/AddToShoppingList.png" width="200" heigth="100">
 
 #### 2.16.2 Workflow
 
-TODO
+Zutaten werden automatisch für die Rezepte, der nächsten 7 Tage im Kalender, eingetragen. Der User kann anschließend diese Liste überprüfen und Zutaten die schon vorhanden sind löschen, oder eigene Zutaten hinzufügen.
 
 ### 2.17. Use Case Produkt von der  Einkaufsliste löschen
 

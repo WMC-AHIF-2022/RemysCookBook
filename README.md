@@ -229,13 +229,11 @@ TODO
 
 #### 2.17.1 GUI-Design
 
-<img src="./pictures/ShoppingList.png" width="200" heigth="100">
-
-Zutaten können mithilfe eines Klicks auf den Kreis nebenbei abgehakt werden, bleiben jedoch in der Liste bis man auf das Minus-Zeichen drückt um das Rezept permanent zu löschen. 
+<img src="./pictures/ShoppingList.png" width="200" heigth="100"> 
 
 #### 2.17.2 Workflow
 
-TODO
+Zutaten können mithilfe eines Klicks auf den Kreis nebenbei abgehakt werden, bleiben jedoch in der Liste bis man auf das Minus-Zeichen drückt um das Rezept permanent zu löschen.
 
 
 ### 2.18. Use Case Auswahl der Youth-User

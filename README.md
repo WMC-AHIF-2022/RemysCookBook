@@ -231,7 +231,7 @@ Zutaten werden automatisch für die Rezepte, der nächsten 7 Tage im Kalender, e
 
 #### 2.17.2 Workflow
 
-Zutaten können mithilfe eines Klicks auf den Kreis nebenbei abgehakt werden, bleiben jedoch in der Liste bis man auf das Minus-Zeichen drückt um das Rezept permanent zu löschen.
+Zutaten können mithilfe eines Klicks auf den Kreis nebenbei abgehakt werden, bleiben jedoch in der Liste bis man auf das Minus-Zeichen drückt um das Rezept permanent zu löschen. Wenn man erneut auf den Kreis drückt, wird diese Zutat wieder als "nicht-abgehakt" angezeigt.
 
 
 ### 2.18. Use Case Auswahl der Youth-User

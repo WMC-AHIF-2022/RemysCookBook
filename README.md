@@ -187,9 +187,10 @@ TODO
 
 #### 2.13.1 GUI-Design
 
-<img src="./pictures/...">
+<img src="./pictures/Favourites.png">
 
-TODO
+Alle Rezepte die mit 5 Sternen bewertet wurden, werden hier angezeigt. Um ein Rezept von dieser Liste zu entfernen muss die Sterne-Bewertung auch entfernt werden. <br>
+Durch das Drücken auf ein bestimmtes Rezept erhält man eine detailiertere Ansicht der Personen, die das Rezept mit 5 Sternen bewertet haben und die Möglichkeit es zum Kalendar hinzuzufügen.
 
 
 ### 2.14. Use Case Filtern von Rezepten

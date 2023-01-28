@@ -67,17 +67,30 @@ Die Anwendung enthält außerdem ein Maskottchen, das die Benutzer durch die App
 - **Youth-User:** 
   Er besitzt die generellen Rechte ausgenommen der Erstellung, das Ändern und Löschen eines Rezepts.
   
-### 2.2. Use Case Account-Erstellung
+### 2.2. Use Case Erstellen des Accounts
 
 #### 2.2.1 GUI-Design
 
-<img src="./pictures/Account-Erstellung1.png" width="200" height="375"> <img src="./pictures/Account-Erstellung2.png" width="200" height="375">
+<img src="./pictures/01_CreateAccount.png" width="190" height="375"> <img src="./pictures/02_CreateAccount.png" width="190" height="375">
 
-Hierbei handelt es sich um ein Login-System, wo die Fam-ID als Schlüssel zum Einsteigen in den Essensplan verwendet wird. Sollte noch kein Account bestehen, wird der Main-User aufgefordert einen Benutzernamen, Passwort sowie eine Fam-ID einzugeben. Weitere Benutzer können mit der festgelegten Fam-ID in den Essensplan einsteigen. 
+Zuerst wird nach einem Benutzernamen sowie Passwort gefragt. Ist die Eingabe gültig, wird die Fam-ID, eine 16-stellige Hexadezimal-Nummer, vom  System erzeugt. Die Person, die den Account erstellt, wird automatisch als Main-User angesehen. Es gibt nur einen Main-User und er kann auch nicht auf ein anderes Mitglied geändert werden. Weitere Benutzer können mit der festgelegten Fam-ID in den Essensplan einsteigen (genauers dazu in dem UC Login Main-User/User). 
 
 #### 2.2.2 Workflow
 
-- Bei jeder Eingabe wird das Format auf Gültigkeit und die Existenz überprüft.
+- **TODO**
+
+### 2.3. Use Case Login Main-User/User
+
+#### 2.3.1 GUI-Design
+
+<img src="./pictures/Login_Users.png" width="200" height="375">
+
+
+Hierbei handelt es sich um ein Login-System, wo die automatisch generierte Fam-ID als Schlüssel zum Einsteigen in den Essensplan verwendet wird. Sollte ein Benutzer zum ersten Mal in den Essensplan einsteigen, erkennt das System dies und erstellt einen neuen Benutzer.
+
+#### 2.3.2 Workflow
+
+- **TODO**
 
 <img src="./pictures/signUp.png">
 

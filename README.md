@@ -217,7 +217,7 @@ TODO
 
 #### 2.16.1 GUI-Design
 
-<img src="./pictures/...">
+<img src="./pictures/..." width="200" heigth="100">
 
 TODO
 
@@ -229,9 +229,9 @@ TODO
 
 #### 2.17.1 GUI-Design
 
-<img src="./pictures/...">
+<img src="./pictures/ShoppingList.png" width="200" heigth="100">
 
-TODO
+Zutaten können mithilfe eines Klicks auf den Kreis nebenbei abgehakt werden, bleiben jedoch in der Liste bis man auf das Minus-Zeichen drückt um das Rezept permanent zu löschen. 
 
 #### 2.17.2 Workflow
 

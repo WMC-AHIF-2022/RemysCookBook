@@ -110,9 +110,8 @@ Hierbei sieht man das die jeweiligen eingetragenen Menüs für den Tag, die der 
 ### 2.5. Use Case Menü für den Essensplan vorschlagen
 #### 2.5.1 GUI-Design
 
-<img src="./pictures/...">
-
-TODO: Beschreiben
+<img src="./pictures/Menuevorschlag.jpg">
+Um einen Menüvorschlag zu machen muss man zuerst auf den Plus-Button in der Kalenderansicht drücken. Danach wird man zu einer neuen Seite geführt (Abbildung 2) die alle Rezepte anzeigt, die es gibt, dazu gibt es auch einen Filter für verschiedene Kategorien (Italienisch, Mexikanisch...). Durch einen Klick kommt man auf das Rezept und kann dieses hinzufügen. Hier drückt man wieder auf den Plus Button und ein Kalender wird angezeigt. In dem Kalender kann man das gewünschte Datum auswählen und mit dem Button "Ok" wird ein Request ausgeschickt. 
 
 ### 2.6. Use Case Akzeptieren/Ablehnen eines Menüvorschlags
 #### 2.6.1 GUI-Design

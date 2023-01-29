@@ -140,11 +140,11 @@ Der Main-User bekommt eine neue Menürequest für denselben Tag. Er kann ihn ent
 
 1. Youth-User Ansicht
 
-<img src="./pictures/Rezeptansicht.png">
+<img src="./pictures/Rezeptansicht-Youth.png">
 
 2. Main-User Ansicht (mit + zum hinzufügen von Rezept)
 
-<img src="./pictures/Rezeptansicht-MainUser.png">
+<img src="./pictures/Rezeptansicht-Main.png">
 Die erste Abbildung ist die Sicht des Youth-Users. Die zweite ist die des Main & "normalen" Users, da die beiden neue Rezepte erstellen können (siehe 2.9). 
 
 ### 2.9. Use Case neues Rezept erstellen
@@ -152,14 +152,11 @@ Die erste Abbildung ist die Sicht des Youth-Users. Die zweite ist die des Main &
 
 <img src="./pictures/Rezepterstellung.png" >
 
-Nur der Main & "normale" User können ein neues Rezept erstellen. Dafür drückt man auf das Plus in der rechten unteren Ecke. Dann kommt man auf eine neue Seite (Create Recipe). Hier kann man seine Zutaten und seine ZUbereitung für sein Rezept eingeben und dann auf den Button mit "add recipe" drücken, damit das Rezept erstellt wird.
+Nur der Main & "normale" User können ein neues Rezept erstellen. Dafür drückt man auf das Plus in der rechten unteren Ecke. Dann kommt man auf eine neue Seite (Create Recipe). Hier kann man seine Zutaten und seine ZUbereitung für sein Rezept eingeben und dann auf den Button mit "add recipe" drücken, damit das Rezept erstellt wird. Um seine eigenen Rezepte sehen zu können, gibt es nun eine eigene Kategorie "own recipes", die am Anfang noch leer ist. Erst wenn man ein Rezept erstellt, wird dieses dann in "own recipes" hinzugefügt.
 
 #### 2.9.2 Workflow
 
-<img src="./pictures/...">
-
-TODO
-
+<img src="./pictures/ACD-Rezepterstellung.png"  width="300" heigth="90">
 
 ### 2.10. Use Case Ändern eines Rezepts
 

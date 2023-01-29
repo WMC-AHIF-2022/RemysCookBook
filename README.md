@@ -225,9 +225,7 @@ Sobald man auf Remy klickt bekommt man einen Tipp, wie das Kochen erleichtert we
 
 #### 2.16.1 GUI-Design
 
-<img src="./pictures/AddToShoppingList.png" width="200" heigth="100">
-
-#### 2.16.2 Workflow
+<img src="./pictures/ShoppingListAdd.png" width="200" heigth="100">
 
 Zutaten werden automatisch für die Rezepte, die im Kalender stehen, eingetragen. Der User kann anschließend diese Liste überprüfen und Zutaten die schon vorhanden sind löschen, oder eigene Zutaten hinzufügen.
 
@@ -235,12 +233,9 @@ Zutaten werden automatisch für die Rezepte, die im Kalender stehen, eingetragen
 
 #### 2.17.1 GUI-Design
 
-<img src="./pictures/ShoppingList.png" width="200" heigth="100"> 
-
-#### 2.17.2 Workflow
+<img src="./pictures/ShoppingListDelete.png" width="200" heigth="100"> 
 
 Zutaten können mithilfe eines Klicks auf den Kreis nebenbei abgehakt werden, bleiben jedoch in der Liste bis man auf das Minus-Zeichen drückt um das Rezept permanent zu löschen. Wenn man erneut auf den Kreis drückt, wird diese Zutat wieder als "nicht-abgehakt" angezeigt.
-
 
 ### 2.18. Use Case Auswahl der Youth-User
 

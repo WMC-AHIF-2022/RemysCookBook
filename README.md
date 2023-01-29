@@ -179,9 +179,9 @@ Damit man auch ein Rezept löschen kann, braucht man wieder auf sein eigenens Re
 
 #### 2.12.1 GUI-Design
 
-<img src="./pictures/...">
+<img src="./pictures/Rating.png" width="400" heigth="100">
 
-TODO
+Wenn man bei der Ansicht eines Rezeptes etwas nach unten scrollt kommt man zur Sterne-Bewertung. Es wird einem zuerst die durchschnittliche Bewertung dieses Rezeptes angezeigt und darunter die Möglichkeit gegeben eine eigene Bewertung hinzuzufügen. 
 
 
 ### 2.13. Use Case Ansehen von Lieblingsrezepten (5 Sterne)

@@ -246,9 +246,9 @@ Zutaten können mithilfe eines Klicks auf den Kreis nebenbei abgehakt werden, bl
 
 #### 2.18.1 GUI-Design
 
-<img src="./pictures/...">
+<img src="./pictures/Auswahl-Youth-User.png">
 
-TODO
+Der Main-User kann festlegen, welcher User ein Youth-User ist. Dafür gibt es Einstellungen. In den Einstellungen tippt der Main-User auf "members" und dann kann man sehen wer Mitglied bei der Familie ist, in diesem Fall sind es zwei Mitglieder. Wenn man nun einen Youth-User festlegen will, tippt man auf einen Member-Namen und dann auf "Rights". Da popt dann ein Fenster auf bei dem man Youth-User oder Side-User auswählen kann (in der Abbildung ist ein Youth-User ausgewählt). 
 
 ## 3. Nicht-funktionale Anforderungen
 Hier ein Überblick über mögliche nicht-funktionale Anforderungen:

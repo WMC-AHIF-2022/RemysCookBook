@@ -149,17 +149,17 @@ Der Main-User bekommt eine neue Menürequest für denselben Tag. Er kann ihn ent
 
 <img src="./pictures/Rezeptansicht-Youth.png" width="500" heigth="200">
 
-2. Main-User Ansicht (mit + zum hinzufügen von Rezept)
+2. Main-User & Side-User Ansicht (mit + zum hinzufügen von Rezept)
 
 <img src="./pictures/Rezeptansicht-Main.png" width="500" heigth="200">
-Die erste Abbildung ist die Sicht des Youth-Users. Die zweite ist die des Main & "normalen" Users, da die beiden neue Rezepte erstellen können (siehe 2.9). 
+Die erste Abbildung ist die Sicht des Youth-Users. Die zweite ist die des Main & Side-Users, da die beiden neue Rezepte erstellen können (siehe 2.9). 
 
 ### 2.9. Use Case neues Rezept erstellen
 #### 2.9.1 GUI-Design
 
 <img src="./pictures/Rezepterstellung.png" width="500" heigth="200">
 
-Nur der Main & "normale" User können ein neues Rezept erstellen. Dafür drückt man auf das Plus in der rechten unteren Ecke. Dann kommt man auf eine neue Seite (Create Recipe). Hier kann man seine Zutaten und seine ZUbereitung für sein Rezept eingeben und dann auf den Button mit "add recipe" drücken, damit das Rezept erstellt wird. Um seine eigenen Rezepte sehen zu können, gibt es nun eine eigene Kategorie "own recipes", die am Anfang noch leer ist. Erst wenn man ein Rezept erstellt, wird dieses dann in "own recipes" hinzugefügt.
+Nur der Main & Side-User können ein neues Rezept erstellen. Dafür drückt man auf das Plus in der rechten unteren Ecke. Dann kommt man auf eine neue Seite (Create Recipe). Hier kann man seine Zutaten und seine ZUbereitung für sein Rezept eingeben und dann auf den Button mit "add recipe" drücken, damit das Rezept erstellt wird. Um seine eigenen Rezepte sehen zu können, gibt es nun eine eigene Kategorie "own recipes", die am Anfang noch leer ist. Erst wenn man ein Rezept erstellt, wird dieses dann in "own recipes" hinzugefügt.
 
 #### 2.9.2 Workflow
 
@@ -171,7 +171,7 @@ Nur der Main & "normale" User können ein neues Rezept erstellen. Dafür drückt
 
 <img src="./pictures/Rezept-ändern.png" width="500" heigth="200">
 
-Als Main-User & "normaler" User kann man auch seine Rezepte ändern. Dafür tippt man auf "own recipes" und dann auf sein Rezept, das man ändern möchte. Als nächstes drückt man auf "edit" und man kommt auf die Seite mit der man dann zB: Zutaten hinzufügen oder entfernen oder die Zubereitung ändern kann. Damit man die Änderungen speichert drückt man einfach auf "save changes". Somit hat man sein eigenes Rezept verändert. 
+Als Main-User & Side-User kann man auch seine Rezepte ändern. Dafür tippt man auf "own recipes" und dann auf sein Rezept, das man ändern möchte. Als nächstes drückt man auf "edit" und man kommt auf die Seite mit der man dann zB: Zutaten hinzufügen oder entfernen oder die Zubereitung ändern kann. Damit man die Änderungen speichert drückt man einfach auf "save changes". Somit hat man sein eigenes Rezept verändert. 
 
 ### 2.11. Use Case Löschen eines Rezepts
 

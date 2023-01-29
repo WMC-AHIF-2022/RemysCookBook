@@ -213,9 +213,9 @@ Die User werden durch Remy informiert, dass sie nicht nur nach Rezeptnamen sonde
 
 #### 2.15.1 GUI-Design
 
-<img src="./pictures/...">
+<img src="./pictures/remys_tipps.jpg">
 
-TODO
+Sobald man auf Remy klickt bekommt man einen Tipp, wie das Kochen erleichtert werden kann.
 
 
 ### 2.16. Use Case Produkt zur Einkaufsliste hinzufügen

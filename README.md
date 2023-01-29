@@ -50,7 +50,7 @@ Die Anwendung enthält außerdem ein Maskottchen, das die Benutzer durch die App
 ### 2.1. Use Case Überblick
 
 #### 2.1.1. Use Case Diagramm 
-<img src="./pictures/ucd.webp" height="700" width="375">
+<img src="./pictures/ucd.webp" height="750" width="375">
 
 - **Main-User:** erstellt den Familien-Account und verwaltet den Kalender mit den Menüvorschlägen. Er kann die Speisen akzeptieren und zum Essensplan hinzufügen, ablehnen oder mit einem anderen Vorschlag austauschen. Zusätzlich wählt er unter den Mitgliedern die Youth-User aus. Außerdem verfügt er über die generellen Rechte. 
 - **Side-User:** besitzt die generellen Rechte: 
@@ -71,28 +71,28 @@ Die Anwendung enthält außerdem ein Maskottchen, das die Benutzer durch die App
 
 #### 2.2.1 GUI-Design
 
-<img src="./pictures/01_CreateAccount.png" width="190" height="375"> <img src="./pictures/02_CreateAccount.png" width="190" height="375">
+<img src="./pictures/01_CreateAccount.png" width="200" height="400"> <img src="./pictures/02_CreateAccount.png" width="200" height="400">
 
 Zuerst wird nach einem Benutzernamen sowie Passwort gefragt. Ist die Eingabe gültig, wird die Fam-ID, eine 16-stellige Hexadezimal-Nummer, vom  System erzeugt. Die Person, die den Account erstellt, wird automatisch als Main-User angesehen. Es gibt nur einen Main-User und er kann auch nicht auf ein anderes Mitglied geändert werden. Weitere Benutzer können mit der festgelegten Fam-ID in den Essensplan einsteigen (genauers dazu in dem UC Login Main-User/User). 
 
 #### 2.2.2 Workflow
 
-- **TODO**
+<img src="./pictures/ACD_ErstellenDesAccounts.png" height="400">
+
+Nach der Eingabe wird das Format geprüft. Wenn dieses gültig ist, wird die Fam-ID vom System generiert und angezeigt. 
 
 ### 2.3. Use Case Login Main-User/User
 
 #### 2.3.1 GUI-Design
 
-<img src="./pictures/Login_Users.png" width="200" height="375">
-
+<img src="./pictures/Login_Users.png" width="200" height="400">
 
 Hierbei handelt es sich um ein Login-System, wo die automatisch generierte Fam-ID als Schlüssel zum Einsteigen in den Essensplan verwendet wird. Sollte ein Benutzer zum ersten Mal in den Essensplan einsteigen, erkennt das System dies und erstellt einen neuen Benutzer.
 
 #### 2.3.2 Workflow
 
-- **TODO**
-
-<img src="./pictures/signUp.png">
+<img src="./pictures/ACD_LoginUsers.png" height="400">
+Bei der Eingabe wird das Format auf die Gültigkeit geprüft. Sollte diese passen, kann sich der User einloggen. Das System kontrolliert, ob dieser User bereits angelegt ist. Falls nicht, wird er vom System automatisch hinzugefügt. Danach wird der Essensplan angezeigt. 
 
 ### 2.3. Use Case Kalenderansicht
 #### 2.3.1 GUI-Design
@@ -116,9 +116,17 @@ Um einen Menüvorschlag zu machen muss man zuerst auf den Plus-Button in der Kal
 ### 2.6. Use Case Akzeptieren/Ablehnen eines Menüvorschlags
 #### 2.6.1 GUI-Design
 
+<img src="./pictures/01_MenuSuggestions.png" width="200" height="400"> 
+<img src="./pictures/02_MenuSuggestions.png" width="200" height="400"> 
+<img src="./pictures/03_MenuSuggestions.png" width="200" height="400"> 
 
+Nur der Main-User sieht in der Navbar den Bereich für das Akzeptieren, Ablehnen oder Austauschen eines Menüvorschlags. Mit den drei Buttons kann er das Gericht hinzufügen zum Essensplan, ablehnen oder mit einem bereits eingetragenen Essen austauschen. Drückt er auf akzeptieren, wird nach dem gewünschtem Datum gefragt und danach zum Essensplan hinzugefügt.  
 
 #### 2.6.2 Workflow
+
+<img src="./pictures/ACD_AkzeptierenAblehnenMenuevorschlag.png">
+
+Der Main-User sieht alle vorgeschlagenen Menüs und kann mit Buttons entscheiden, ob diese abgelehnt oder bestätigt werden. Sollte er ein Gericht bestätigen, wählt er das gewünschte Datum aus und es wird zum Essensplan hinzugefügt. Danach wird der Vorschlag gelöscht. Sollte eine Speise abgelehnt werden, wird der Vorschlag sofort gelöscht. 
 
 
 ### 2.7. Use Case Austauschen eines Menüvorschlags

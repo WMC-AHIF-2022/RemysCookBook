@@ -100,19 +100,19 @@ Bei der Eingabe wird das Format auf die Gültigkeit geprüft. Sollte diese passe
 
 <img src="./pictures/Kalenderansicht1.jpg" width="200" width="200" height="375">
 
-Hierbei sieht man die jeweiligen eingetragenen Menüs für den Tag, die der Main-User bestätigt hat. Die Request werden von dem Main-User unter dem Button "manage Requests" verwaltet. Er kann diese bestätigen und somit das Gericht in den Essensplan hinzufügen oder ablehnen.
+Hierbei sieht man die jeweiligen eingetragenen Menüs für den Tag, die der Main-User bestätigt hat. Die Request werden von dem Main-User unter dem Button "manage suggestions" verwaltet. Er kann diese bestätigen und somit das Gericht in den Essensplan hinzufügen oder ablehnen.
 
 #### 2.4.2 Workflow
 
 <img src="./pictures/ACD_Menü-hinzufügen.jpg">
 
-- Wenn ein User ein Menü auswählen will, muss das Menü zuerst von dem Main User bestätigt werden. Sobald das Menü bestätigt worden ist, wird es auf dem Kalender angezeigt. Ist dies nicht der Fall, bleibt der Kalender leer.
+Wenn ein Side-User oder Youth-User ein Menü auswählen will, muss er zuerst eine "menu suggestion" an den Main-User schicken. Sobald das Menü von ihm bestätigt worden ist, wird es auf dem Kalender angezeigt. Ist dies nicht der Fall, bleibt der Kalender leer.
 
 ### 2.5. Use Case Menü für den Essensplan vorschlagen
 #### 2.5.1 GUI-Design
 
 <img src="./pictures/Menuevorschlag.jpg">
-Um einen Menüvorschlag zu machen muss man zuerst auf den Plus-Button in der Kalenderansicht drücken. Danach wird man zu einer neuen Seite geführt (Abbildung 2) die alle Rezepte anzeigt, die es gibt, dazu gibt es auch einen Filter für verschiedene Kategorien (Italienisch, Mexikanisch...). Durch einen Klick kommt man auf das Rezept und kann dieses hinzufügen. Hier drückt man wieder auf den Plus Button und ein Kalender wird angezeigt. In dem Kalender kann man das gewünschte Datum auswählen und mit dem Button "Ok" wird ein Request ausgeschickt. 
+Um einen Menüvorschlag zu machen, muss man zuerst auf den Plus-Button in der Kalenderansicht drücken. Danach wird man zu der Rezeptansicht geführt (Abbildung 2), wo es auch einen Filter für die unterschiedlichen Kategorien (Italienisch, Mexikanisch, ...) gibt. Durch einen Klick kommt man auf das Rezept und kann dieses mit einem weiteren Plus-Button hinzufügen. Dann wird ein Kalender angezeigt, in dem man das gewünschte Datum auswählen kann. Mit dem OK-Button wird dann ein Request an den Main-User ausgeschickt. 
 
 ### 2.6. Use Case Akzeptieren/Ablehnen eines Menüvorschlags
 #### 2.6.1 GUI-Design
@@ -133,13 +133,13 @@ Der Main-User sieht alle vorgeschlagenen Menüs und kann mit Buttons entscheiden
 
 <img src="./pictures/Menuevorschlag-austauschen.jpg" width="200" heigth="100">
 
-Mit dem Switch Button kann man das Datum des alten Menüs ändern und das neue zu dem richtigem Datum hinzufügen.
+Mit dem Switch Button kann man einen Vorschlag mit einem bereits eingetragenem Gericht austauschen.
 
 #### 2.3.2 Workflow
 
 <img src="./pictures/Menuevorschlag-akzeptieren-ablehnen.jpg">
 
-Der Main-User bekommt eine neue Menürequest für denselben Tag. Er kann ihn entweder ablehnen dann bleibt der alte Menüvorschlag im Kalender. Falls der Main-User den Menüvorschlag annimmt, wird der alte Menüvorschlag gelöscht und der neue kommt zur Kalenderansicht.
+Der Main-User bekommt eine neue Menu-Suggestion, die er mit einem anderen Gericht austauschen möchte. Dabei wird der alte Menüvorschlag gelöscht und der Neue an dem gewünschten Tag zum Kalender hinzugefügt.
 
 
 ### 2.8. Use Case Ansehen von Rezepten
@@ -152,14 +152,14 @@ Der Main-User bekommt eine neue Menürequest für denselben Tag. Er kann ihn ent
 2. Main-User & Side-User Ansicht (mit + zum hinzufügen von Rezept)
 
 <img src="./pictures/Rezeptansicht-Main.png" width="500" heigth="200">
-Die erste Abbildung ist die Sicht des Youth-Users. Die zweite ist die des Main-Users & Side-Users, da die beiden neue Rezepte erstellen können (siehe 2.9). 
+Die erste Abbildung ist die Sicht des Youth-Users ohne den Plus-Button. Die zweite Ansicht ist die des Main-Users & Side-Users. Diese beiden können Rezepte erstellen (siehe 2.9). 
 
 ### 2.9. Use Case neues Rezept erstellen
 #### 2.9.1 GUI-Design
 
 <img src="./pictures/Rezepterstellung.png" width="500" heigth="200">
 
-Nur der Main-User & Side-User können ein neues Rezept erstellen. Dafür drückt man auf das Plus in der rechten unteren Ecke. Dann kommt man auf eine neue Seite (Create Recipe). Hier kann man seine Zutaten und seine ZUbereitung für sein Rezept eingeben und dann auf den Button mit "add recipe" drücken, damit das Rezept erstellt wird. Um seine eigenen Rezepte sehen zu können, gibt es nun eine eigene Kategorie "own recipes", die am Anfang noch leer ist. Erst wenn man ein Rezept erstellt, wird dieses dann in "own recipes" hinzugefügt.
+Nur der Main-User & Side-User können ein neues Rezept erstellen. Drückt man auf das Plus in der rechten unteren Ecke, wird man auf eine neue Seite geleitet (Create Recipe). Hier kann man die Zutaten sowie die Anleitung für die Zubereitung eingeben. Mit dem Button "add recipe" fügt man das Rezept in die Liste hinzu. Für seine eigenen Rezepte gibt es eine eigene Kategorie ("own recipes"), die am Anfang noch leer ist. Sobald das erste Rezept erstellt ist, befindet sich dieses dann in "own recipes".
 
 #### 2.9.2 Workflow
 
@@ -171,7 +171,7 @@ Nur der Main-User & Side-User können ein neues Rezept erstellen. Dafür drückt
 
 <img src="./pictures/Rezept-ändern.png" width="500" heigth="200">
 
-Als Main-User & Side-User kann man auch seine Rezepte ändern. Dafür tippt man auf "own recipes" und dann auf sein Rezept, das man ändern möchte. Als nächstes drückt man auf "edit" und man kommt auf die Seite mit der man dann zB: Zutaten hinzufügen oder entfernen oder die Zubereitung ändern kann. Damit man die Änderungen speichert drückt man einfach auf "save changes". Somit hat man sein eigenes Rezept verändert. 
+Main-User & Side-User können ihre eigenen Rezepte ändern. Unter dem Button "edit" kann man zB: Zutaten hinzufügen sowie entfernen oder die Anleitung für die Zubereitung ändern. Um die Änderungen zu speichern, drückt man auf den Button "save changes".
 
 ### 2.11. Use Case Löschen eines Rezepts
 
@@ -179,7 +179,7 @@ Als Main-User & Side-User kann man auch seine Rezepte ändern. Dafür tippt man 
 
 <img src="./pictures/Rezept-löschen.png" width="500" heigth="200">
 
-Damit man auch ein Rezept löschen kann, braucht man wieder auf sein eigenens Rezept drücken und dort auf "delete". Die App fragt dann, ob man das Rezept wirklich löschen willst und dann drückt man entwerder auf "yes" (Rezept wird gelöscht) oder auf "no" (wird nicht gelöscht).
+Um ein eigenens Rezept zu löschen, drückt man auf den Button "delete". Es wird eine Meldung angezeigt, ob man das Rezept wirklich löschen will. Mit "yes" wird es endgültig gelöscht.
 
 
 ### 2.12. Use Case Bewerten eines Rezepts
@@ -188,7 +188,7 @@ Damit man auch ein Rezept löschen kann, braucht man wieder auf sein eigenens Re
 
 <img src="./pictures/RatingRecipe.png" width="400" heigth="100">
 
-Wenn man bei der Ansicht eines Rezeptes etwas nach unten scrollt kommt man zur Sterne-Bewertung. Es wird einem zuerst die durchschnittliche Bewertung dieses Rezeptes angezeigt und darunter die Möglichkeit gegeben eine eigene Bewertung hinzuzufügen. 
+Die Bewertung befindet sich bei der Ansicht eines Rezeptes unter der Zubereitung. Es wird einem zuerst die durchschnittliche Bewertung dieses Rezeptes angezeigt und darunter die Möglichkeit gegeben, eine eigene Bewertung hinzu zu fügen. 
 
 
 ### 2.13. Use Case Ansehen von Lieblingsrezepten (5 Sterne)
@@ -197,8 +197,8 @@ Wenn man bei der Ansicht eines Rezeptes etwas nach unten scrollt kommt man zur S
 
 <img src="./pictures/Favourites.png" width="400" heigth="100">
 
-Alle Rezepte die mit 5 Sternen bewertet wurden, werden hier angezeigt. Um ein Rezept von dieser Liste zu entfernen muss die Sterne-Bewertung auch entfernt werden. <br>
-Durch das Drücken auf ein bestimmtes Rezept erhält man eine detailiertere Ansicht der Personen, die das Rezept mit 5 Sternen bewertet haben und die Möglichkeit es zum Kalendar hinzuzufügen.
+Alle Rezepte die mit 5 Sternen bewertet wurden, werden hier angezeigt. Um ein Rezept von dieser Liste zu entfernen, muss die 5 Sternen-Bewertung auch entfernt werden. <br>
+Durch das Drücken auf ein bestimmtes Rezept erhält man eine detailiertere Ansicht, welche Personen das Rezept mit 5 Sternen bewertet haben und die Möglichkeit es zum Kalendar hinzuzufügen.
 
 
 ### 2.14. Use Case Filtern von Rezepten
@@ -206,6 +206,8 @@ Durch das Drücken auf ein bestimmtes Rezept erhält man eine detailiertere Ansi
 #### 2.14.1 GUI-Design
 
 <img src="./pictures/RecipesFilter.png" width="400" heigth="100">
+
+Rezepte können nicht nur nach Kategorien, sondern auch nach bestimmten Zutaten gefiltert werde.
 
 #### 2.14.2 Workflow
 
@@ -218,7 +220,7 @@ Die User werden durch Remy informiert, dass sie nicht nur nach Rezeptnamen sonde
 
 <img src="./pictures/remys_tipps.jpg">
 
-Sobald man auf Remy klickt bekommt man einen Tipp, wie das Kochen erleichtert werden kann.
+Sobald man auf Remy klickt bekommt man einen Tipp, wie das Zubereiten oder Kochen erleichtert werden kann.
 
 
 ### 2.16. Use Case Produkt zur Einkaufsliste hinzufügen
@@ -227,7 +229,7 @@ Sobald man auf Remy klickt bekommt man einen Tipp, wie das Kochen erleichtert we
 
 <img src="./pictures/ShoppingListAdd.png" width="200" heigth="100">
 
-Zutaten werden automatisch für die Rezepte, die im Kalender stehen, eingetragen. Der User kann anschließend diese Liste überprüfen und Zutaten die schon vorhanden sind löschen, oder eigene Zutaten hinzufügen.
+Die Zutaten werden automatisch mit dem Hinzufügen eines Rezepts in den Kalender in die Einkaufsliste eingetragen. Der User kann anschließend diese Liste überprüfen und die Zutaten, die schon vorhanden sind löschen. Eigene Zutaten können mit dem Button "add item" hinzugefügt werden.
 
 ### 2.17. Use Case Produkt von der  Einkaufsliste löschen
 
@@ -235,7 +237,7 @@ Zutaten werden automatisch für die Rezepte, die im Kalender stehen, eingetragen
 
 <img src="./pictures/ShoppingListDelete.png" width="200" heigth="100"> 
 
-Zutaten können mithilfe eines Klicks auf den Kreis nebenbei abgehakt werden, bleiben jedoch in der Liste bis man auf das Minus-Zeichen drückt um das Rezept permanent zu löschen. Wenn man erneut auf den Kreis drückt, wird diese Zutat wieder als "nicht-abgehakt" angezeigt.
+Die Produkte auf der Einkaufsliste können mithilfe eines Klicks auf den Kreis abgehakt werden. Jedoch bleiben sie in der Liste bis man auf das Minus-Zeichen drückt, um das Rezept permanent zu löschen. Um den Status von bereits abgehakte Produkte zu ändern, drückt man erneut auf den Kreis.
 
 ### 2.18. Use Case Auswahl der Youth-User
 
@@ -243,10 +245,9 @@ Zutaten können mithilfe eines Klicks auf den Kreis nebenbei abgehakt werden, bl
 
 <img src="./pictures/Auswahl-Youth-User.png">
 
-Der Main-User kann festlegen, welcher User ein Youth-User ist. Dafür gibt es Einstellungen. In den Einstellungen tippt der Main-User auf "members" und dann kann man sehen wer Mitglied bei der Familie ist, in diesem Fall sind es zwei Mitglieder. Wenn man nun einen Youth-User festlegen will, tippt man auf einen Member-Namen und dann auf "Rights". Da popt dann ein Fenster auf bei dem man Youth-User oder Side-User auswählen kann (in der Abbildung ist ein Youth-User ausgewählt). 
+Der Main-User kann festlegen, . In den Einstellungen kann der Main-User festlegen, welcher User ein Youth-User ist. Unter "members" und "right" verwaltet er die Rechte der einzelenen Mitglieder.
 
 ## 3. Nicht-funktionale Anforderungen
-Hier ein Überblick über mögliche nicht-funktionale Anforderungen:
 
 ### `Usability`: Benutzbarkeitsanforderung
 - Die Software soll einfach bedienbar/strukturiert sein und für jedes Alter geeignet.

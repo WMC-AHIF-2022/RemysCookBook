@@ -251,51 +251,27 @@ Zutaten können mithilfe eines Klicks auf den Kreis nebenbei abgehakt werden, bl
 TODO
 
 ## 3. Nicht-funktionale Anforderungen
-
-Nicht-funktionale Anforderungen beschreiben Anforderungen an das System, die nicht-fachlicher Natur sind, jedoch entscheidend zur Anwendbarkeit des Systems beitragen. Sie definieren beispielsweise Qualitätsanforderungen, Sicherheitsanforderungen oder Performanceanforderungen.
-
-Nicht-funktionale Anforderungen definieren grundlegende Eigenschaften eines Systems, die im Architekturentwurf berücksichtigt werden müssen. Da diese Anforderungen auch die Entwicklungskosten beeinflussen (können), müssen sie messbar beschrieben werden.
-
-- FALSCH: Das System muss schnell sein.
-- RICHTIG: Daten müssen spätestens innerhalb von 500 ms zurückgegeben werden.
-
-Zur einfachen Strukturierung der Anforderungen werden diejenigen Anforderungen, die nicht eindeutig zu den funktionalen Anforderungen gehören, den nicht-funktionalen Anforderungen zugeordnet.
-
 Hier ein Überblick über mögliche nicht-funktionale Anforderungen:
 
 ### `Usability`: Benutzbarkeitsanforderung
-
-- Wie muss die Software beschaffen sein, damit die Zielgruppe gerne damit arbeitet?
-  - Die Software soll einfach bedienbar sein und für jedes Alter geeignet.
-- Beispiel:
-  - Die Software soll dem Erscheinungsbild anderer Produkte des Herstellers entsprechen.
+- Die Software soll einfach bedienbar/strukturiert sein und für jedes Alter geeignet.
+- Die App sollte einfache Anleitung für Rezepte bieten. Sie sollte auch einen übersichtlichen Essensplan beinhalten.
 
 ### `Efficiency`: Effizienzanforderung
-
-- Hier geht es sowohl um Laufzeit- als auch um Speichereffizienz. Was wird unter dem sparsamen Einsatz dieser Ressourcen verstanden?
-- Beispiel:
-  - Die Berechnung darf nicht länger als 0,25 Sekunden dauern.
+- Das Laden der App darf nicht länger als 2 Sekunden dauern, um User nicht abzuschrecken.
+- Das Hinzufügen im genrellen oder auch im Essenplan sollte nicht länger als 0,5 Sekunden dauern. 
 
 ### `Maintenance`: Wartbarkeits- und Portierbarkeitsanforderung
-
-- Welcher Grad an Änderbarkeit wird gefordert? Hier werden, soweit wie möglich, kommende Anpassungen und Erweiterungen vorhergesehen.
-- Beispiel:
-  - Das Produkt soll später auch in englischer Sprache verfügbar sein.
+- Die App soll später auch in Dark-Mode verfügbar sein.
+- Remys Cookbook soll in Zukunft auch als Website verfügbar sein.
 
 ### `Security`: Sicherheitsanforderung
-
-- Zu den Sicherheitsanforderungen gehören die Aspekte Vertraulichkeit, Datenintegrität und Verfügbarkeit.
-  - Wie sehr müssen die Daten vor dem Zugriff durch Dritte geschützt werden?
-  - Ist es entscheidend, die Korrektheit der erfassten Daten und ihre Konsistenz zu gewährleisten?
-  - Dürfen Systemausfälle vorkommen?
-- Beispiel:
-  - Das System muss gewährleisten, dass Daten nie verändert werden können.
+- Durchgehende sichere Verbindung
+- Family ID ist einzigartig und darf nie verändert werden
+- Passwörter werden mit Hashcode geschützt
 
 ### `Legal`: Gesetzliche Anforderung
-
-- Welche Standards und Gesetze müssen beachtet werden?
-- Beispiel:
-  - Das Produkt muss die ISO 9000 Norm erfüllen.
+- Persönliche Daten dürfen nicht gespeichert werden
 
 ## 4. Mengengerüst
 

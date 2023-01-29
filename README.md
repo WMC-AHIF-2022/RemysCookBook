@@ -222,7 +222,7 @@ Sobald man auf Remy klickt bekommt man einen Tipp, wie das Kochen erleichtert we
 
 #### 2.16.2 Workflow
 
-Zutaten werden automatisch für die Rezepte, der nächsten 7 Tage im Kalender, eingetragen. Der User kann anschließend diese Liste überprüfen und Zutaten die schon vorhanden sind löschen, oder eigene Zutaten hinzufügen.
+Zutaten werden automatisch für die Rezepte, die im Kalender stehen, eingetragen. Der User kann anschließend diese Liste überprüfen und Zutaten die schon vorhanden sind löschen, oder eigene Zutaten hinzufügen.
 
 ### 2.17. Use Case Produkt von der  Einkaufsliste löschen
 

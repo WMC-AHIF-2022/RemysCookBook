@@ -95,18 +95,18 @@ Hierbei handelt es sich um ein Login-System, wo die automatisch generierte Fam-I
 
 Bei der Eingabe wird das Format auf die Gültigkeit geprüft. Sollte diese passen, kann sich der User einloggen. Das System kontrolliert, ob dieser User bereits angelegt ist. Falls nicht, wird er vom System automatisch hinzugefügt. Danach wird der Essensplan angezeigt. 
 
-### 2.3. Use Case Kalenderansicht
-#### 2.3.1 GUI-Design
+### 2.4. Use Case Ansehen von Speisen im Kalender
+#### 2.4.1 GUI-Design
 
 <img src="./pictures/Kalenderansicht1.jpg" width="200" width="200" height="375">
 
-Hierbei sieht man das die jeweiligen eingetragenen Menüs für den Tag, die der Main-User bestätigt hat. Die Request werden von dem Main-User unter dem Button "manage Requests" verwaltet. Er kann diese bestätigen und somit das Gericht in den Essensplan hinzufügen oder ablehnen.
+Hierbei sieht man die jeweiligen eingetragenen Menüs für den Tag, die der Main-User bestätigt hat. Die Request werden von dem Main-User unter dem Button "manage Requests" verwaltet. Er kann diese bestätigen und somit das Gericht in den Essensplan hinzufügen oder ablehnen.
 
 #### 2.4.2 Workflow
 
 <img src="./pictures/ACD_Menü-hinzufügen.jpg">
 
-- Wenn ein User ein Menü auswählen will, muss das Menü zuerst von dem Main User bestätigt werden. Sobald das Menü bestätigt worden ist, wird es auf dem Kalender angezeigt. Ist dies nicht der Fall bleibt der Kalender leer.
+- Wenn ein User ein Menü auswählen will, muss das Menü zuerst von dem Main User bestätigt werden. Sobald das Menü bestätigt worden ist, wird es auf dem Kalender angezeigt. Ist dies nicht der Fall, bleibt der Kalender leer.
 
 ### 2.5. Use Case Menü für den Essensplan vorschlagen
 #### 2.5.1 GUI-Design

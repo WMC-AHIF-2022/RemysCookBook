@@ -162,18 +162,17 @@ Nur der Main & "normale" User können ein neues Rezept erstellen. Dafür drückt
 
 #### 2.10.1 GUI-Design
 
-<img src="./pictures/...">
+<img src="./pictures/Rezept-ändern.png">
 
-TODO
-
+Als Main-User & "normaler" User kann man auch seine Rezepte ändern. Dafür tippt man auf "own recipes" und dann auf sein Rezept, das man ändern möchte. Als nächstes drückt man auf "edit" und man kommt auf die Seite mit der man dann zB: Zutaten hinzufügen oder entfernen oder die Zubereitung ändern kann. Damit man die Änderungen speichert drückt man einfach auf "save changes". Somit hat man sein eigenes Rezept verändert. 
 
 ### 2.11. Use Case Löschen eines Rezepts
 
 #### 2.11.1 GUI-Design
 
-<img src="./pictures/...">
+<img src="./pictures/REzept-löschen.png">
 
-TODO
+Damit man auch ein Rezept löschen kann, braucht man wieder auf sein eigenens Rezept drücken und dort auf "delete". Die App fragt dann, ob man das Rezept wirklich löschen willst und dann drückt man entwerder auf "yes" (Rezept wird gelöscht) oder auf "no" (wird nicht gelöscht).
 
 
 ### 2.12. Use Case Bewerten eines Rezepts

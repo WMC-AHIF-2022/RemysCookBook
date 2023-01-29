@@ -170,7 +170,7 @@ Als Main-User & "normaler" User kann man auch seine Rezepte ändern. Dafür tipp
 
 #### 2.11.1 GUI-Design
 
-<img src="./pictures/REzept-löschen.png" width="500" heigth="200">
+<img src="./pictures/Rezept-löschen.png" width="500" heigth="200">
 
 Damit man auch ein Rezept löschen kann, braucht man wieder auf sein eigenens Rezept drücken und dort auf "delete". Die App fragt dann, ob man das Rezept wirklich löschen willst und dann drückt man entwerder auf "yes" (Rezept wird gelöscht) oder auf "no" (wird nicht gelöscht).
 

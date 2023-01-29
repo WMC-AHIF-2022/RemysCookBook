@@ -202,7 +202,7 @@ Durch das Drücken auf ein bestimmtes Rezept erhält man eine detailiertere Ansi
 
 #### 2.14.2 Workflow
 
-<img src="./pictures/FilternVonRezeptenACD.jpeg" width="500" heigth="100">
+<img src="./pictures/FilternVonRezepten.jpeg" width="500" heigth="100">
 Die User werden durch Remy informiert, dass sie nicht nur nach Rezeptnamen sondern auch nach bestimmmten Zutaten suchen können.
 
 ### 2.15 Use Case Erhalten eines Rezeptvorschlags durch Remy

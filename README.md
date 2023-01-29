@@ -133,7 +133,7 @@ Der Main-User sieht alle vorgeschlagenen Menüs und kann mit Buttons entscheiden
 
 <img src="./pictures/Menuevorschlag-austauschen.jpg" width="200" heigth="100">
 
-Mit dem Switch Button kann man ein anderes vorgeschlagenes Rezept auswählen.
+Mit dem Switch Button kann man das Datum des alten Menüs ändern und das neue zu dem richtigem Datum hinzufügen.
 
 #### 2.3.2 Workflow
 

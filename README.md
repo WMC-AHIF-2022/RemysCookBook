@@ -140,17 +140,17 @@ Der Main-User bekommt eine neue Menürequest für denselben Tag. Er kann ihn ent
 
 1. Youth-User Ansicht
 
-<img src="./pictures/Rezeptansicht-Youth.png">
+<img src="./pictures/Rezeptansicht-Youth.png" width="400" heigth="100">
 
 2. Main-User Ansicht (mit + zum hinzufügen von Rezept)
 
-<img src="./pictures/Rezeptansicht-Main.png">
+<img src="./pictures/Rezeptansicht-Main.png" width="400" heigth="100">
 Die erste Abbildung ist die Sicht des Youth-Users. Die zweite ist die des Main & "normalen" Users, da die beiden neue Rezepte erstellen können (siehe 2.9). 
 
 ### 2.9. Use Case neues Rezept erstellen
 #### 2.9.1 GUI-Design
 
-<img src="./pictures/Rezepterstellung.png" >
+<img src="./pictures/Rezepterstellung.png" width="400" heigth="100">
 
 Nur der Main & "normale" User können ein neues Rezept erstellen. Dafür drückt man auf das Plus in der rechten unteren Ecke. Dann kommt man auf eine neue Seite (Create Recipe). Hier kann man seine Zutaten und seine ZUbereitung für sein Rezept eingeben und dann auf den Button mit "add recipe" drücken, damit das Rezept erstellt wird. Um seine eigenen Rezepte sehen zu können, gibt es nun eine eigene Kategorie "own recipes", die am Anfang noch leer ist. Erst wenn man ein Rezept erstellt, wird dieses dann in "own recipes" hinzugefügt.
 
@@ -162,7 +162,7 @@ Nur der Main & "normale" User können ein neues Rezept erstellen. Dafür drückt
 
 #### 2.10.1 GUI-Design
 
-<img src="./pictures/Rezept-ändern.png">
+<img src="./pictures/Rezept-ändern.png" width="400" heigth="100">
 
 Als Main-User & "normaler" User kann man auch seine Rezepte ändern. Dafür tippt man auf "own recipes" und dann auf sein Rezept, das man ändern möchte. Als nächstes drückt man auf "edit" und man kommt auf die Seite mit der man dann zB: Zutaten hinzufügen oder entfernen oder die Zubereitung ändern kann. Damit man die Änderungen speichert drückt man einfach auf "save changes". Somit hat man sein eigenes Rezept verändert. 
 
@@ -170,7 +170,7 @@ Als Main-User & "normaler" User kann man auch seine Rezepte ändern. Dafür tipp
 
 #### 2.11.1 GUI-Design
 
-<img src="./pictures/REzept-löschen.png">
+<img src="./pictures/REzept-löschen.png" width="400" heigth="100">
 
 Damit man auch ein Rezept löschen kann, braucht man wieder auf sein eigenens Rezept drücken und dort auf "delete". Die App fragt dann, ob man das Rezept wirklich löschen willst und dann drückt man entwerder auf "yes" (Rezept wird gelöscht) oder auf "no" (wird nicht gelöscht).
 

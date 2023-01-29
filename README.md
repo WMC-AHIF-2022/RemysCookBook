@@ -205,7 +205,7 @@ Durch das Drücken auf ein bestimmtes Rezept erhält man eine detailiertere Ansi
 
 #### 2.14.1 GUI-Design
 
-<img src="./pictures/recipes.png" width="400" heigth="100">
+<img src="./pictures/RecipesFilter.png" width="400" heigth="100">
 
 #### 2.14.2 Workflow
 

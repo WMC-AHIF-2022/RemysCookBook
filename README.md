@@ -92,6 +92,7 @@ Hierbei handelt es sich um ein Login-System, wo die automatisch generierte Fam-I
 #### 2.3.2 Workflow
 
 <img src="./pictures/ACD_LoginUsers.png" height="400">
+
 Bei der Eingabe wird das Format auf die Gültigkeit geprüft. Sollte diese passen, kann sich der User einloggen. Das System kontrolliert, ob dieser User bereits angelegt ist. Falls nicht, wird er vom System automatisch hinzugefügt. Danach wird der Essensplan angezeigt. 
 
 ### 2.3. Use Case Kalenderansicht
@@ -116,9 +117,7 @@ Um einen Menüvorschlag zu machen muss man zuerst auf den Plus-Button in der Kal
 ### 2.6. Use Case Akzeptieren/Ablehnen eines Menüvorschlags
 #### 2.6.1 GUI-Design
 
-<img src="./pictures/01_MenuSuggestions.png" width="200" height="400"> 
-<img src="./pictures/02_MenuSuggestions.png" width="200" height="400"> 
-<img src="./pictures/03_MenuSuggestions.png" width="200" height="400"> 
+<img src="./pictures/01_MenuSuggestions.png" width="200" height="400"> <img src="./pictures/02_MenuSuggestions.png" width="200" height="400"> <img src="./pictures/03_MenuSuggestions.png" width="200" height="400"> 
 
 Nur der Main-User sieht in der Navbar den Bereich für das Akzeptieren, Ablehnen oder Austauschen eines Menüvorschlags. Mit den drei Buttons kann er das Gericht hinzufügen zum Essensplan, ablehnen oder mit einem bereits eingetragenen Essen austauschen. Drückt er auf akzeptieren, wird nach dem gewünschtem Datum gefragt und danach zum Essensplan hinzugefügt.  
 

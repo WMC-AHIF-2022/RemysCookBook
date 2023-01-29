@@ -140,7 +140,7 @@ Der Main-User bekommt eine neue Menürequest für denselben Tag. Er kann ihn ent
 
 1. Youth-User Ansicht
 
-<img src="./pictures/Rezeptansicht-Youth.png" width="400" heigth="100">
+<img src="./pictures/Rezeptansicht-Youth.png" width="500" heigth="200">
 
 2. Main-User Ansicht (mit + zum hinzufügen von Rezept)
 

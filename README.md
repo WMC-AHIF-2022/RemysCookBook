@@ -87,7 +87,7 @@ Nach der Eingabe wird das Format geprüft. Wenn dieses gültig ist, wird die Fam
 
 <img src="./pictures/Login_Users.png" width="200" height="400">
 
-Hierbei handelt es sich um ein Login-System, wo die automatisch generierte Fam-ID als Schlüssel zum Einsteigen in den Essensplan verwendet wird. Sollte ein Benutzer zum ersten Mal in den Essensplan einsteigen, erkennt das System dies und erstellt einen neuen Benutzer.
+Hierbei handelt es sich um ein Login-System, wo die automatisch generierte Fam-ID als Schlüssel zum Einsteigen in den Essensplan verwendet wird. Sollte ein Benutzer zum ersten Mal in den Essensplan einsteigen, erkennt das System dies und erstellt einen neuen Benutzer. Ein neuer Benutzer erhält die Rechte des Youth-Users. Diese können aber in den Einstellung geändert werden (näheres dazu in dem UC Auswahl Youth-User).
 
 #### 2.3.2 Workflow
 
@@ -245,7 +245,7 @@ Die Produkte auf der Einkaufsliste können mithilfe eines Klicks auf den Kreis a
 
 <img src="./pictures/Auswahl-Youth-User.png">
 
-Der Main-User kann festlegen, . In den Einstellungen kann der Main-User festlegen, welcher User ein Youth-User ist. Unter "members" und "right" verwaltet er die Rechte der einzelenen Mitglieder.
+In den Einstellungen kann der Main-User festlegen, welcher User ein Youth-User ist. Unter "members" und "right" verwaltet er die Rechte der einzelenen Mitglieder.
 
 ## 3. Nicht-funktionale Anforderungen
 
@@ -278,6 +278,11 @@ Zur Abschätzung der aufkommenden Datenmengen und damit verbunden der notwendige
 - Mit welcher Anfrage-Frequenz wird gerechnet?
 
 ## 5. Systemarchitektur
+
+### 5.1 Datenmodell
+<img src="./pictures/ERD.png">
+
+### 5.2
 
 - Auflistung der Softwarekomponenten in einem Verteilungsdiagramm (typisch: Client - Server - Datenbank).
 - Beispiel:

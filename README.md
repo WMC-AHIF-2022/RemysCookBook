@@ -1,14 +1,6 @@
 # System-Spezifikation `Remys CookBook`
 
 # Inhaltsverzeichnis
-
-- [Einleitung](#einleitung)
-- [Hauptteil](#hauptteil)
-	- [Thema 1](#thema1)
-	- [Thema 2](#thema2)
-	- [Thema 3](#thema3)	
-- [Schluß](#schluss)
-
 - [1. Ausgangslage und Zielsetzung](#1-ausgangslage-und-zielsetzung)
   - [1.1. Ist-Situation](#11-ist-situation)
   - [1.2. Verbesserungspotenziale](#12-verbesserungspotenziale)

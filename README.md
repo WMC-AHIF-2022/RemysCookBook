@@ -2,20 +2,27 @@
 
 # Inhaltsverzeichnis
 
-- [1. Ausgangslage und Zielsetzung](#-1-ausgangslage-und-zielsetzung-)
-  - [1.1. Ist-Situation](#-11-ist-situation-)
-  - [1.2. Verbesserungspotenziale](#-12-verbesserungspotenziale-)
-  - [1.3. Zielsetzung](#-13-zielsetzung-)
-- [2. Funktionale Anforderungen](#-2-funktionale-anforderungen-)
-  - [2.1. Use Case Überblick](#-21-use-case-überblick-)
-- [3. Nicht-funktionale Anforderungen](#-3-nicht-funktionale-anforderungen-)
-  - [`Usability`: Benutzbarkeitsanforderung](#-usability-benutzbarkeitsanforderung-)
-  - [`Efficiency`: Effizienzanforderung](#-efficiency-effizienzanforderung-)
-  - [`Maintenance`: Wartbarkeits- und Portierbarkeitsanforderung](#-maintenance-wartbarkeits--und-portierbarkeitsanforderung-)
-  - [`Security`: Sicherheitsanforderung](#-security-sicherheitsanforderung-)
-  - [`Legal`: Gesetzliche Anforderung](#-legal-gesetzliche-anforderung-)
-- [4. Mengengerüst](#-4-mengengerüst-)
-- [5. Systemarchitektur](#-5-systemarchitektur-)
+- [Einleitung](#einleitung)
+- [Hauptteil](#hauptteil)
+	- [Thema 1](#thema1)
+	- [Thema 2](#thema2)
+	- [Thema 3](#thema3)	
+- [Schluß](#schluss)
+
+- [1. Ausgangslage und Zielsetzung](#1-ausgangslage-und-zielsetzung)
+  - [1.1. Ist-Situation](#11-ist-situation)
+  - [1.2. Verbesserungspotenziale](#12-verbesserungspotenziale)
+  - [1.3. Zielsetzung](#13-zielsetzung)
+- [2. Funktionale Anforderungen](#2-funktionale-anforderungen)
+  - [2.1. Use Case Überblick](#21-use-case-überblick)
+- [3. Nicht-funktionale Anforderungen](#3-nicht-funktionale-anforderungen)
+  - [`Usability`: Benutzbarkeitsanforderung](#usability-benutzbarkeitsanforderung)
+  - [`Efficiency`: Effizienzanforderung](#efficiency-effizienzanforderung)
+  - [`Maintenance`: Wartbarkeits- und Portierbarkeitsanforderung](#maintenance-wartbarkeits--und-portierbarkeitsanforderung)
+  - [`Security`: Sicherheitsanforderung](#security-sicherheitsanforderung)
+  - [`Legal`: Gesetzliche Anforderung](#legal-gesetzliche-anforderung)
+- [4. Mengengerüst](#4-mengengerüst)
+- [5. Systemarchitektur](#5-systemarchitektur)
 
 ## 1. Ausgangslage und Zielsetzung
 

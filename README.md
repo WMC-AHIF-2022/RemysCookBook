@@ -1,5 +1,22 @@
 # System-Spezifikation `Remys CookBook`
 
+# Inhaltsverzeichnis
+
+- [1. Ausgangslage und Zielsetzung](#-1-ausgangslage-und-zielsetzung-)
+  - [1.1. Ist-Situation](#-11-ist-situation-)
+  - [1.2. Verbesserungspotenziale](#-12-verbesserungspotenziale-)
+  - [1.3. Zielsetzung](#-13-zielsetzung-)
+- [2. Funktionale Anforderungen](#-2-funktionale-anforderungen-)
+  - [2.1. Use Case Überblick](#-21-use-case-überblick-)
+- [3. Nicht-funktionale Anforderungen](#-3-nicht-funktionale-anforderungen-)
+  - [`Usability`: Benutzbarkeitsanforderung](#-usability-benutzbarkeitsanforderung-)
+  - [`Efficiency`: Effizienzanforderung](#-efficiency-effizienzanforderung-)
+  - [`Maintenance`: Wartbarkeits- und Portierbarkeitsanforderung](#-maintenance-wartbarkeits--und-portierbarkeitsanforderung-)
+  - [`Security`: Sicherheitsanforderung](#-security-sicherheitsanforderung-)
+  - [`Legal`: Gesetzliche Anforderung](#-legal-gesetzliche-anforderung-)
+- [4. Mengengerüst](#-4-mengengerüst-)
+- [5. Systemarchitektur](#-5-systemarchitektur-)
+
 ## 1. Ausgangslage und Zielsetzung
 
 ### 1.1. Ist-Situation
@@ -274,17 +291,19 @@ In den Einstellungen kann der Main-User festlegen, welcher User ein Youth-User i
 Zur Abschätzung der aufkommenden Datenmengen und damit verbunden der notwendigen Infrastruktur, um die nötige Performance zu erzielen, ist ein Mengengerüst zu erstellen. Mögliche Fragestellungen:
 
 - Wieviele User werden erwartet?
+  - Mindestens 1 User (Main User), die Anzahl der User hängt von der Größe der Familie ab.
+  - In den ersten Monaten rechnen wir mit ca. 30 Familien, später erwarten wir eine Steigerung um ein Vielfaches.
 - Wieviele Daten pro User werden erwartet?
+  - Die Bilder werden im Cache geladen, daher wird die Datenrate pro User sich in Grenzen halten.
 - Mit welcher Anfrage-Frequenz wird gerechnet?
+  - ca. 50 Requests/Tag pro Familie
 
 ## 5. Systemarchitektur
 
-### 5.1 Datenmodell
+### 5.1 Deployment Diagram
+
+<img src="./pictures/Architektur.jpeg">
+
+### 5.2 Datenmodell
+
 <img src="./pictures/ERD.png">
-
-### 5.2
-
-- Auflistung der Softwarekomponenten in einem Verteilungsdiagramm (typisch: Client - Server - Datenbank).
-- Beispiel:
-
-<img src="./Architektur.jpg">

@@ -25,7 +25,7 @@ create table user_template(
     username varchar2(30),
     pw varchar2(30),
     rights number(1), -- 1 = main-user (alle Rechte), 2 = side-user ...
-    famID number(8) constraint fk_famID_ut references administration(famID) -- UCD ändern,
+    famID number(8) constraint fk_famID_ut references administration(famID) -- UCD ï¿½ndern,
 );
 
 create table recipes(
@@ -34,8 +34,16 @@ create table recipes(
     recipeName varchar2(30),
     preparation varchar2(1000),
     rating number(1) check (rating between 1 and 5),
-    weekID number(4) constraint fk_weekID references mealPlan(weekID)
+    weekID number(4) constraint fk_weekID references mealPlan(weekID),
+    recipeDate date
 );
+
+create table requestedRecipes (
+    recipeID number(4),
+    constraint pk_recipes primary key (recipeID),
+    recipeName varchar2(30),
+    requestedFrom varchar2(30)
+) strict;
 
 create table ingredients(
     ingredient_name varchar2(30),

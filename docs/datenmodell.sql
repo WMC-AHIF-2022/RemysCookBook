@@ -34,6 +34,7 @@ create table recipes(
     recipeName varchar2(30),
     preparation varchar2(1000),
     rating number(1) check (rating between 1 and 5),
+    category varchar2(30),
     weekID number(4) constraint fk_weekID references mealPlan(weekID),
     recipeDate date
 );

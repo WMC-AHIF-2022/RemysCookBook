@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.headline{
+    font-family: Comic Sans MS;
+    text-shadow: 1px 3px 5px #414046;
+}
+
+.grid-suggestion{
+    box-shadow: 1px 4px 8px #686770;
+    width: 350px;
+    height: 150px;
+}
+
+.grid-suggestion-image{
+    height: 150px;
+    width: 130px;
+}
+
+.text-font{
+    font-family: Comic Sans MS;
+}

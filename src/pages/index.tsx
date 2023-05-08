@@ -1,5 +1,6 @@
 import { UserButton } from "@clerk/nextjs"
 import ExampleComponent from "RemysCookBook/components/example"
+import Layout from "RemysCookBook/layout/layout"
 import { fetchExamples } from "RemysCookBook/queries"
 import { type NextPage } from "next"
 import Head from "next/head"
@@ -12,6 +13,7 @@ const Home: NextPage = () => {
 
     return (
         <>
+        <Layout>
             <Head>
                 <title>RemysCookBook</title>
                 <link rel="icon" href="/favicon.ico" />
@@ -25,6 +27,7 @@ const Home: NextPage = () => {
                     <ExampleComponent />
                 </div>
             </main>
+        </Layout>
         </>
     )
 }

@@ -10,8 +10,26 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Example {
-    id        String   @id @default(cuid())
-    createdAt DateTime @default(now())
-    updatedAt DateTime @updatedAt
+model recipes {
+  recipeID Int @id 
+  recipeName String 
+  preparation String 
+  rating Int?
+  category String
+  weekID Int?
+  recipeDate String?
+}
+
+model requestedRecipes {
+  recipeID Int @id 
+  recipeName String
+  requestedFrom String
+}
+
+model ingredients {
+  ingredientID Int @id
+  recipeID Int
+  ingredientName String 
+  amount String?
+  unit String?
 }

@@ -1,31 +1,32 @@
 -- CreateTable
-CREATE TABLE "Example" (
+/*CREATE TABLE "Example" (
     "id" TEXT NOT NULL PRIMARY KEY,
     "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updatedAt" DATETIME NOT NULL
-);
+);*/
 
 create table recipes (
-    recipeID INTEGER NOT NULL PRIMARY KEY,
-    recipeName TEXT NOT NULL,
-    preparation TEXT NOT NULL,
-    rating INTEGER,
-    category TEXT NOT NULL,
-    weekID INTEGER,
-    recipeDate TEXT
+    "recipeID" INTEGER NOT NULL PRIMARY KEY,
+    "recipeName" TEXT NOT NULL,
+    "preparation" TEXT NOT NULL,
+    "rating" INTEGER,
+    "category" TEXT NOT NULL,
+    "weekID" INTEGER,
+    "recipeDate" DATETIME
 );
 
 create table requestedRecipes (
-    recipeID INTEGER NOT NULL PRIMARY KEY,
-    recipeName TEXT NOT NULL,
-    requestedFrom TEXT NOT NULL
+    "recipeID" INTEGER NOT NULL PRIMARY KEY,
+    "recipeName" TEXT NOT NULL,
+    "requestedFrom" TEXT NOT NULL
 );
 
 create table ingredients (
-    recipeID INTEGER NOT NULL,
-    ingredientName TEXT NOT NULL,
-    amount REAL,
-    unit TEXT
+    "ingredientID" INTEGER NOT NULL PRIMARY KEY,
+    "recipeID" INTEGER NOT NULL,
+    "ingredientName" TEXT NOT NULL,
+    "amount" REAL,
+    "unit" TEXT
 );
 
 -- INSERT VALUES
@@ -72,6 +73,65 @@ insert into recipes values (7433, 'Tomato Penne', '1. Bring a large pot of water
 
 insert into requestedRecipes values (6765, 'Chicken Ramen', 'Melanie');
 
-insert into ingredients values (7433, 'minced fresh basil', 1, 'tbsp');
+insert into ingredients values (1, 4927, 'sushi rice', 1, 'cup');
+insert into ingredients values (2, 4927, 'water', 1, 'cup');
+insert into ingredients values (3, 4927, 'rice vinegar', 1, 'tbsp');
+insert into ingredients values (4, 4927, 'sugar', 1, 'tbsp');
+insert into ingredients values (5, 4927, 'salt', 1, 'tsp');
+insert into ingredients values (6, 4927, 'nori', 1, 'sheet');
+insert into ingredients values (7, 4927, 'cucumber', 1, null);
+insert into ingredients values (8, 4927, 'avocado', 1, null);
+insert into ingredients values (9, 4927, 'crab sticks', 1, null);
 
-insert into ingredients values (7433, 'sesame seeds', null, null);
+insert into ingredients values (10, 6765, 'chicken stock', 700, 'ml');
+insert into ingredients values (11, 6765, 'garlic', 3, 'cloves');
+insert into ingredients values (12, 6765, 'soy sauce', 4, 'tbsp');
+insert into ingredients values (13, 6765, 'Worcestershire sauce', 1, 'tsp');
+insert into ingredients values (14, 6765, 'ginger', 1, 'thumb-sized piece');
+insert into ingredients values (15, 6765, 'Chinese five spice', 1, 'tsp');
+insert into ingredients values (16, 6765, 'ramen noodles', 375, 'g');
+insert into ingredients values (17, 6765, 'cooked pork or chicken', 400, 'g');
+insert into ingredients values (18, 6765, 'sesame oil', 2, 'tsp');
+insert into ingredients values (19, 6765, 'spinach', 25, 'g');
+insert into ingredients values (20, 6765, 'sweetcorn', 1, 'tbsp');
+insert into ingredients values (21, 6765, 'eggs', 2, 'boiled');
+insert into ingredients values (22, 6765, 'nori sheet', 1, 'shredded');
+insert into ingredients values (23, 6765, 'spring onions or shallots', 1, 'sliced');
+insert into ingredients values (24, 6765, 'sesame seeds', 1, 'sprinkle');
+
+insert into ingredients values (25, 6780, 'pizza dough', 1, null);
+insert into ingredients values (26, 6780, 'tomato sauce', 1, 'cup');
+insert into ingredients values (27, 6780, 'mozzarella cheese', 1, 'cup');
+insert into ingredients values (28, 6780, 'basil', 1, 'tbsp');
+
+insert into ingredients values (29, 7433, 'minced fresh basil', 1, 'tbsp');
+insert into ingredients values (30, 7433, 'garlic', 3, 'cloves');
+insert into ingredients values (31, 7433, 'olive oil', 2, 'tbsp');
+insert into ingredients values (32, 7433, 'salt', 1, 'tsp');
+insert into ingredients values (33, 7433, 'penne pasta', 1, 'pound');
+insert into ingredients values (34, 7433, 'pepper jack cheese', 1, 'cup');
+insert into ingredients values (35, 7433, 'mozzarella cheese', 1, 'cup');
+insert into ingredients values (36, 7433, 'parmesan cheese', 1, 'cup');
+insert into ingredients values (37, 7433, 'tomatoes', 1, 'pound');
+insert into ingredients values (38, 7433, 'sesame seeds', null, null);
+
+insert into ingredients values (39, 8064, 'spaghetti', 350, 'g');
+insert into ingredients values (40, 8064, 'pancetta', 100, 'g');
+insert into ingredients values (41, 8064, 'pecorino cheese', 50, 'g');
+insert into ingredients values (42, 8064, 'parmesan', 50, 'g');
+insert into ingredients values (43, 8064, 'eggs', 3, '');
+insert into ingredients values (44, 8064, 'garlic', 2, 'cloves');
+insert into ingredients values (45, 8064, 'butter', 50, 'g');
+insert into ingredients values (46, 8064, 'black pepper', 1, 'pinch');
+
+insert into ingredients values (47, 9074, 'beef', 1, 'pound');
+insert into ingredients values (48, 9074, 'salt', 1, 'tsp');
+insert into ingredients values (49, 9074, 'pepper', 1, 'tsp');
+insert into ingredients values (50, 9074, 'onion', 1, 'chopped');
+insert into ingredients values (51, 9074, 'garlic', 1, 'clove');
+insert into ingredients values (52, 9074, 'egg', 1, null);
+insert into ingredients values (53, 9074, 'bread crumbs', 1, 'cup');
+insert into ingredients values (54, 9074, 'olive oil', 1, 'tbsp');
+insert into ingredients values (55, 9074, 'hamburger buns', 4, null);
+insert into ingredients values (56, 9074, 'lettuce', 4, 'leaves');
+insert into ingredients values (57, 9074, 'tomato', 4, 'slices');

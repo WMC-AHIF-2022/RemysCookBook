@@ -1,9 +1,13 @@
-import React from "react";
+import Head from "next/head";
 import Footer from "./footer";
 
-const LoggedInLayout = ({ children }: any) => {
+const Layout = ({ children }: any) => {
   return (
     <div>
+      <Head>
+          <title>RemysCookBook</title>
+          <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className="className=flex min-h-screen flex-col items-center justify-center bg-teal-700">
         {children}
       </div>
@@ -12,4 +16,4 @@ const LoggedInLayout = ({ children }: any) => {
   );
 };
 
-export default LoggedInLayout;
+export default Layout;

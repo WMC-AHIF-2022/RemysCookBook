@@ -1,7 +1,5 @@
-import { UserButton } from "@clerk/nextjs/dist/client";
 import Layout from "RemysCookBook/layout/layout";
-import { type NextPage } from "next"
-import Head from "next/head";
+import { type NextPage } from "next";
 import Image from "next/image";
 
 

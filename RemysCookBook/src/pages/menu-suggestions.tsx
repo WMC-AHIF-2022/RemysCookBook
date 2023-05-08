@@ -4,6 +4,11 @@ import Image from "next/image";
 
 
 const MenuSuggestions: NextPage = () => {
+
+
+
+
+    
         return (
                 <>
                 <Layout>

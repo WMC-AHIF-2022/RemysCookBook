@@ -1,4 +1,5 @@
 import { UserButton } from "@clerk/nextjs/dist/client";
+import Layout from "RemysCookBook/layout/layout";
 import { type NextPage } from "next"
 import Head from "next/head";
 import Image from "next/image";
@@ -7,13 +8,13 @@ import Image from "next/image";
 const MenuSuggestions: NextPage = () => {
         return (
                 <>
-                <main className="className=flex min-h-screen flex-col items-center justify-center bg-teal-700">
+                <Layout>
                     <div>
                         <h1 className="headline flex flex-col items-center justify-center font-bold text-3xl text-zinc-50 pt-8">Menu suggestions</h1>
                     </div>
                     <section>
-                        <div id="listOfSuggestions">
-                            <div className="grid-suggestion grid grid-rows-3 grid-cols-5 gap-1 rounded-3xl bg-teal-100 mt-10 ml-7 mr-7">
+                        <div className="mt-10 flex flex-col items-center justify-center" id="listOfSuggestions">
+                            <div className="grid-suggestion grid grid-rows-3 grid-cols-5 gap-1 rounded-3xl bg-teal-100">
                                 <div className="row-span-3 col-span-2">
                                     <Image className="grid-suggestion-image rounded-s-3xl" src="/images/placeholder.jpg" alt="placeholder" width={100} height={100}></Image>
                                 </div>
@@ -36,8 +37,8 @@ const MenuSuggestions: NextPage = () => {
                         </div>
 
                     </section>
-                </main>
-                </>
+                </Layout>
+            </>
         );
 }
 

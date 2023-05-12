@@ -2,12 +2,11 @@ import React, { useState } from "react";
 import "../_app";
 import "tailwindcss/tailwind.css";
 
+
 function WeekPlaner() {
     const [recipeName, setRecipeName] = useState("Name");
 
-    function createNewDate() {
-        // Hier den Code für die Erstellung eines neuen Datums einfügen
-    }
+
 
     return (
         <div className=" h-screen background">
@@ -33,11 +32,8 @@ function WeekPlaner() {
             {/* Add Button */}
             <section className="fixed bottom-0 right-0 mb-8 mr-8">
                 <form>
-                    <button
-                        onClick={createNewDate}
-                        className="bg-white border-none text-black px-4 py-4 text-center text-sm rounded-full m-2 add-button"
-                        id="addBtn">
-
+                    <button>
+                        <a href="../recipes/recipes" className="bg-white border-none text-black px-4 py-4 text-center text-sm rounded-full m-2 add-button"></a>
                     </button>
                 </form>
             </section>

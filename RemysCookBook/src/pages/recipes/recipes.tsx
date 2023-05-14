@@ -8,6 +8,8 @@ import {useQuery} from "react-query"
 import React from "react";
 import {search} from "RemysCookBook/pages/recipes/categories";
 
+
+
 const Recipes: NextPage = () => {
 
     return (

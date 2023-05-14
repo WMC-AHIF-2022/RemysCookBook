@@ -6,7 +6,7 @@ import {type NextPage} from "next"
 import Head from "next/head"
 import {useQuery} from "react-query"
 import React from "react";
-import {search} from "RemysCookBook/pages/recipes/categories";
+import {search} from "RemysCookBook/pages/recipe-view/categories";
 
 const Recipes: NextPage = () => {
 
@@ -28,9 +28,10 @@ const Recipes: NextPage = () => {
 
                         <div className="recipe">
                             <img src="../img/breakfast.png" alt=""/>
-                                <div className="r-details">
-                                    <h2 id="recipe"><a className="link-to-recipes" href="recipes.html">Peanut Butter Toast</a></h2>
-                                </div>
+                            <div className="r-details">
+                                <h2 id="recipe"><a className="link-to-recipes" href="recipes.html">Peanut Butter
+                                    Toast</a></h2>
+                            </div>
                         </div>
                     </div>
                 </div>

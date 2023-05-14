@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 const tabs = [
-  { icon: '/svg/navBar/calendar.svg', href: '#', current: false },
+  { icon: '/svg/navBar/calendar.svg', href: '/weekplaner/weekplaner', current: false },
   { icon: '/svg/navBar/suggestions.svg', href: '/menu-suggestions', current: false },
   { icon: '/svg/navBar/recipe.svg', href: '#', current: true },
   { icon: '/svg/navBar/favourite.svg', href: '#', current: false },

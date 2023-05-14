@@ -1,47 +1,58 @@
-import React, { useState } from "react";
-import "../_app";
-import "tailwindcss/tailwind.css";
 import Layout from "RemysCookBook/layout/layout";
-import { type NextPage } from "next";
+import Image from "next/image";
+import { useEffect, useState } from "react";
 
-const WeekPlaner : NextPage = () => {
-    const [recipeName, setRecipeName] = useState("Name");
+const Weekplaner = () => {
+    const [recipe, setRecipe] = useState({
+        recipeId: 6760,
+        name: "Veggie Bowl",
+        imageUrl: "/images/6760.jpg",
+    });
+
+    const [selectedDate, setSelectedDate] = useState("");
+
+
+    useEffect(() => {
+        const selectedDate = sessionStorage.getItem("date-selected");
+        const date = new Date(selectedDate);
+        const formattedDate = date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+        setSelectedDate(formattedDate);
+    }, []);
 
     return (
-        <>
-            <Layout>
-                <div className=" h-screen background">
-                    <h1 className="text-center text-4xl font-bold mt-10 mb-8">Weekplaner</h1>
+        <Layout>
+            <div>
+                <h1 className="headline flex flex-col items-center justify-center font-bold text-3xl text-zinc-50 pt-8">
+                    Weekplanner
+                </h1>
+            </div>
+            <section>
+                <div className="absolute right-0 p-5 text-white text-xl">{selectedDate}</div>
 
-                    {/* Date */}
-
-                    {/* Food that is served on that day of the week */}
-                    <section>
-                        <div className="grid-container-weekplan">
-                            <div className="grid-item-weekplan-picture">
-                                {/* image here */}
-                            </div>
-                            <div className="grid-item-weekplan-recipe-name">
-                                <h1 id="textRecipeName" className="weekplaner-recipe-name">
-                                    {recipeName}
-                                </h1>
-                            </div>
+                <div className="mt-10 flex flex-col items-center justify-center py-4">
+                    <div className="grid-suggestion grid grid-rows-3 grid-cols-5 gap-1 rounded-3xl bg-teal-100">
+                        <div className="row-span-3 col-span-2">
+                            <Image
+                                className="grid-suggestion-image rounded-s-3xl"
+                                src={recipe.imageUrl}
+                                alt={recipe.name}
+                                width={100}
+                                height={100}
+                            />
                         </div>
-                    </section>
-
-                    {/* Add Button */}
-                    <section className="fixed bottom-0 right-0 mb-8 mr-8">
-                        <form>
-                            <button>
-                                <a href="../recipes/recipes" className="bg-white border-none text-black px-4 py-4 text-center text-sm rounded-full m-2 add-button"></a>
-                            </button>
-                        </form>
-                    </section>
+                        <div className="col-span-3">
+                            <h1
+                                id="textRecipeName"
+                                className="text-font flex flex-col justify-center pt-6 text-2xl font-semibold text-teal-700"
+                            >
+                                {recipe.name}
+                            </h1>
+                        </div>
+                    </div>
                 </div>
-            </Layout>
-        </>
-
+            </section>
+        </Layout>
     );
-}
+};
 
-export default WeekPlaner;
+export default Weekplaner;

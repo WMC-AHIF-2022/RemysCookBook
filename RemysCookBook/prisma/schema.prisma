@@ -35,8 +35,8 @@ model ingredients {
 }
 
 model menuSuggestion{
-    suggestionID INT @id
-    recipeID INT
+    suggestionID Int @id
+    recipeID Int
     recipeDate String?
 }
 

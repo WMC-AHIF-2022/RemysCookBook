@@ -1,48 +1,85 @@
+import type RequestedRecipe from "RemysCookBook/common/helpers";
 import Layout from "RemysCookBook/layout/layout";
+import {fetchRecipes, fetchRequestedRecipes} from "RemysCookBook/queries";
 import { type NextPage } from "next";
 import Image from "next/image";
-
+import { useQuery } from "react-query";
+import {useState} from "react";
+import Link from "next/link";
+import {useRouter} from "next/router";
 
 const MenuSuggestions: NextPage = () => {
+    function selectDate(recipeId): void {
+        sessionStorage.setItem('menu-suggestions-recipeId', recipeId);
+        router.push("/selectDate/");
+
+    }
+    function deleteRequest(event: MouseEvent<HTMLButtonElement, MouseEvent>): void {
+        throw new Error("Function not implemented.");
+    }
+
+    function switchRecipes(event: MouseEvent<HTMLButtonElement, MouseEvent>): void {
+        throw new Error("Function not implemented.");
+    }
 
 
 
+    const { isLoading, error, data } = useQuery('requestedRecipes', fetchRequestedRecipes);
+    const router = useRouter();
 
-    
-        return (
-                <>
-                <Layout>
-                    <div>
-                        <h1 className="headline flex flex-col items-center justify-center font-bold text-3xl text-zinc-50 pt-8">Menu suggestions</h1>
-                    </div>
-                    <section>
+    if (isLoading) {
+        return <div>Loading...</div>;
+    }
+
+    if (error) {
+        return <div>Error: {error.message}</div>;
+    }
+  
+    const reqRec = /*data?.data ??*/ [];
+    let selectedRecipeId: number;
+
+    reqRec.push({recipeId: 6760, name: "Veggie Bowl", requestedBy: "Melanie"})
+    console.log(reqRec);
+
+    return (
+            <>
+            <Layout>
+                <div>
+                    <h1 className="headline flex flex-col items-center justify-center font-bold text-3xl text-zinc-50 pt-8">Menu suggestions</h1>
+                </div>
+                <section>
+                {reqRec.map((request: RequestedRecipe, index) => (
+                    <div key={index}>
                         <div className="mt-10 flex flex-col items-center justify-center" id="listOfSuggestions">
                             <div className="grid-suggestion grid grid-rows-3 grid-cols-5 gap-1 rounded-3xl bg-teal-100">
                                 <div className="row-span-3 col-span-2">
-                                    <Image className="grid-suggestion-image rounded-s-3xl" src="/images/placeholder.jpg" alt="placeholder" width={100} height={100}></Image>
+                                    <Image className="grid-suggestion-image rounded-s-3xl" src={"/images/6760.jpg"} alt="placeholder" width={100} height={100}></Image>
                                 </div>
                                 <div className="col-span-3">
-                                    <h1 id="textRecipeName" className="text-font flex flex-col justify-center pt-4 text-2xl font-semibold text-teal-700">Veggie Bowl</h1>
+                                    <h1 id="textRecipeName" className="text-font flex flex-col justify-center pt-4 text-2xl font-semibold text-teal-700">{request.name}</h1>
                                 </div>
                                 <div className="col-span-3">
-                                    <p id="textUser" className="text-font flex flex-col justify-center pt-2 italic text-teal-700">suggest by mustermann</p>
+                                    <p id="textUser" className="text-font flex flex-col justify-center pt-2 italic text-teal-700">suggest by {request.requestedBy}</p>
                                 </div>
                                 <div>
-                                    <button type="button" id="acceptBtn" className="flex flex-col items-center justify-center bg-teal-700 hover:bg-teal-900 text-white py-2 px-2.5 text-sm rounded-full">Accept</button>
+                                    <button type="button" id="acceptBtn" onClick={() => selectDate(request.recipeId)}
+                                     className="flex flex-col items-center justify-center bg-teal-700 hover:bg-teal-900 text-white py-2 px-2.5 text-sm rounded-full">Accept</button>
                                 </div>
                                 <div>
-                                    <button type="button" id="denyBtn" className="flex flex-col items-center justify-center bg-teal-700 hover:bg-teal-900 text-white py-2 px-3.5 text-sm rounded-full">Deny</button>
+                                    <button type="button" id="denyBtn" onClick={deleteRequest} className="flex flex-col items-center justify-center bg-teal-700 hover:bg-teal-900 text-white py-2 px-3.5 text-sm rounded-full">Deny</button>
                                 </div>
                                 <div>
-                                    <button type="button" id="switchBtn" className="flex flex-col items-center justify-center bg-teal-700 hover:bg-teal-900 text-white py-2 pl-2.5 pr-2 text-sm rounded-full">Switch</button>
+                                    <button type="button" id="switchBtn" onClick={switchRecipes} className="flex flex-col items-center justify-center bg-teal-700 hover:bg-teal-900 text-white py-2 pl-2.5 pr-2 text-sm rounded-full">Switch</button>
                                 </div>
                             </div>
                         </div>
-
-                    </section>
-                </Layout>
-            </>
-        );
+                    </div>
+                ))}
+                </section>
+            </Layout>
+        </>
+    );
 }
+
 
 export default MenuSuggestions

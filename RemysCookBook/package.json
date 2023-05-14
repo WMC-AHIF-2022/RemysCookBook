@@ -23,6 +23,7 @@
     "react-dom": "18.2.0",
     "react-query": "^3.39.3",
     "react-responsive-datepicker": "^1.0.6",
+    "react-router-dom": "^6.11.1",
     "sassy-datepicker": "^0.10.2",
     "yarn": "^1.22.19",
     "zod": "^3.21.4"

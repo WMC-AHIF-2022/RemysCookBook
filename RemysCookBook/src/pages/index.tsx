@@ -1,15 +1,8 @@
 import { UserButton } from "@clerk/nextjs"
 import ExampleComponent from "RemysCookBook/components/example"
 import Layout from "RemysCookBook/layout/layout"
-import { fetchExamples } from "RemysCookBook/queries"
 import { type NextPage } from "next"
-import { useQuery } from "react-query"
-
 const Home: NextPage = () => {
-    const data = useQuery("examples", fetchExamples)
-
-    console.log(data)
-
     return (
         <>
         <Layout>

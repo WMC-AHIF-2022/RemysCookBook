@@ -30,7 +30,7 @@ const AllRecipes: NextPage = () => {
         <>
             <Layout>
                 <div>
-                    <h1 className="headline flex flex-col items-center justify-center font-bold text-3xl text-zinc-50 pt-8">Japanese</h1>
+                    <h1 className="headline flex flex-col items-center justify-center font-bold text-3xl text-zinc-50 pt-8">JAPANESE</h1>
                 </div>
 
                 <div className="search">

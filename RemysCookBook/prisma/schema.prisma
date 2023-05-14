@@ -33,3 +33,10 @@ model ingredients {
   amount String?
   unit String?
 }
+
+model menuSuggestion{
+    suggestionID INT @id
+    recipeID INT
+    recipeDate String?
+}
+

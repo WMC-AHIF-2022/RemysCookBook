@@ -1,5 +1,4 @@
 import { PrismaClient } from "@prisma/client";
-
 import { env } from "RemysCookBook/env.mjs";
 
 const globalForPrisma = globalThis as unknown as {

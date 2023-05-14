@@ -8,8 +8,8 @@ export default async function handler(
     if (req.method !== "GET") return res.status(404).send({})
 
     try {
-        // const data = await prisma.example.findMany()
-        // return res.status(200).json(data)
+        const data = await prisma.recipes.findMany()
+        return res.status(200).json(data)
     } catch (e) {
         console.error("error", e)
         return res.status(500).json({ message: e })

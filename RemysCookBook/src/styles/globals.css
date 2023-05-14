@@ -52,6 +52,13 @@
     grid-row-end: 1;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Baloo2, cursive, normal;
+}
+
 .background {
     background-color: teal;
     color: white;

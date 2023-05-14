@@ -66,18 +66,23 @@ const Categories: NextPage = () => {
                     </form>
 
                     <div className="product-list" id="product-list">
-                        <div className="product">
-                            <img src="../img/breakfast.png" alt=""/>
-                            <div className="p-details">
-                                {recipes.map((recipe: Recipe) => {
-                                    if (!categories.includes(recipe.category)) {
-                                        categories.push(recipe.category);
-                                        return  <h2 key={recipe.recipeID}><a className="link-to-recipes" href="/recipes"></a>{recipe.category}</h2>
-                                    }
-                                    return null;
-                                })}
-                            </div>
-                        </div>
+                        {recipes.map((recipe: Recipe) => {
+                            if (!categories.includes(recipe.category)) {
+                                categories.push(recipe.category);
+                                const category = recipe.category;
+                                console.log(category);
+                                sessionStorage.setItem('category', 'Korean');
+                                return (
+                                    <div className="product" key={recipe.recipeID}>
+                                        <img src={require(`public/images/categories/${recipe.category}.png`).default} alt="" />
+                                        <div className="p-details">
+                                            <h2><a className="link-to-recipes" href="/recipe-view/all-recipes"></a>{recipe.category}</h2>
+                                        </div>
+                                    </div>
+                                );
+                            }
+                            return null;
+                        })}
                     </div>
                 </div>
             </Layout>

@@ -6,6 +6,7 @@ const Layout = ({ children }: any) => {
     <div>
       <Head>
           <title>RemysCookBook</title>
+          <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
           <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="className=flex min-h-screen flex-col items-center justify-center bg-teal-700">

@@ -30,10 +30,7 @@ export const search: React.KeyboardEventHandler<HTMLInputElement> = (event) => {
 
 const Categories: NextPage = () => {
 
-    const MyComponent = () => {
-        const {isLoading, error, data} = useQuery('recipes', () =>
-            fetchRecipes()
-        );
+   
 
 
         return (

@@ -43,7 +43,7 @@ const Weekplaner = () => {
                         <div className="col-span-3">
                             <h1
                                 id="textRecipeName"
-                                className="text-font flex flex-col justify-center pt-6 text-2xl font-semibold text-teal-700"
+                                className="text-font flex flex-col justify-center pr-8 pt-14 text-2xl font-semibold text-teal-700"
                             >
                                 {recipe.name}
                             </h1>

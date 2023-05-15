@@ -23,7 +23,7 @@ const Weekplaner = () => {
         <Layout>
             <div>
                 <h1 className="headline flex flex-col items-center justify-center font-bold text-3xl text-zinc-50 pt-8">
-                    Weekplanner
+                    Weekplaner
                 </h1>
             </div>
             <section>

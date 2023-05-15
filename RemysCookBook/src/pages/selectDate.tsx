@@ -14,7 +14,7 @@ const SelectDate: NextPage = () => {
     const [storedDate, setStoredDate] = useState(null);
 
     const handleOkButtonClick = () => {
-        sessionStorage.setItem('date-selected', startDate);
+        sessionStorage.setItem('date-selected', startDate.toDateString());
         router.push("/weekplaner/weekplaner");
     };
 
@@ -26,7 +26,7 @@ const SelectDate: NextPage = () => {
                     <div className="mt-8">
                         <DatePicker
                             selected={startDate}
-                            onChange={(date) => setStartDate(date)}
+                            onChange={(date) => setStartDate(date!)}
                             inline
                         />
                         <button className="flex flex-col items-center justify-center bg-teal-600 hover:bg-teal-700 text-white mt-8 mb-5 ml-40 py-3 px-7 text-m rounded-full" onClick={handleOkButtonClick}>Ok</button>

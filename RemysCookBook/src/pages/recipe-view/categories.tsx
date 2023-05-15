@@ -8,6 +8,8 @@ import {useQuery, UseQueryResult} from "react-query"
 import React, {ReactComponentElement} from "react";
 import axios from "axios";
 import {Recipe} from "RemysCookBook/pages/recipe-view/interface-recipe/recipe";
+import Image from "next/image";
+import Link from "next/link";
 
 export const search: React.KeyboardEventHandler<HTMLInputElement> = (event) => {
     const searchBox: string = (document.getElementById("search-item") as HTMLInputElement).value.toUpperCase();
@@ -52,31 +54,42 @@ const Categories: NextPage = () => {
 
     const recipes: Recipe[] = data?.data ?? []; // ?? [] -> setzt das array auf einn leeres array wenn data nicht exestiert
     const categories: string[] = [];
+
+    function saveCategory(category: string) {
+        sessionStorage.setItem('category', category);
+    }
+
     return (
         <>
             <Layout>
                 <div>
                     <h1 className="headline flex flex-col items-center justify-center font-bold text-3xl text-zinc-50 pt-8">RECIPES</h1>
                 </div>
+
                 <div className="search">
                     <form>
                         <i className="fas fa-search"></i>
-                        <input type="text" name="name" id="search-item" placeholder="search ..."
+                        <input type="text" name="" id="search-item" placeholder="search ..."
                                onKeyUp={search}/>
                     </form>
 
-                    <div className="product-list" id="product-list">
+                    <div>
+                        <img src={`/public/images/arrow-back.png`} alt=""/>
+                    </div>
+
+                    <div className="product-list" id="product-list" >
                         {recipes.map((recipe: Recipe) => {
                             if (!categories.includes(recipe.category)) {
                                 categories.push(recipe.category);
                                 const category = recipe.category;
-                                console.log(category);
-                                sessionStorage.setItem('category', 'Korean');
                                 return (
-                                    <div className="product" key={recipe.recipeID}>
-                                        <img src={require(`public/images/categories/${recipe.category}.png`).default} alt="" />
+                                    <div className="product" key={recipe.recipeID} >
+                                        <Image className="grid-suggestion-image rounded-s-3xl"
+                                               src={require(`public/images/categories/${recipe.category}.png`).default}
+                                               alt="" width={100} height={100}></Image>
                                         <div className="p-details">
-                                            <h2><a className="link-to-recipes" href="/recipe-view/all-recipes"></a>{recipe.category}</h2>
+                                            <Link className="link-to-recipes" href="/recipe-view/all-recipes" onClick={() => saveCategory(recipe.category)}>
+                                                <h2>{recipe.category}</h2></Link>
                                         </div>
                                     </div>
                                 );

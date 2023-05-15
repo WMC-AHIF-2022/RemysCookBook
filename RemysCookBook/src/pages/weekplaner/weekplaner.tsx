@@ -13,7 +13,7 @@ const Weekplaner = () => {
 
 
     useEffect(() => {
-        const selectedDate = sessionStorage.getItem("date-selected");
+        const selectedDate = sessionStorage.getItem("date-selected")!;
         const date = new Date(selectedDate);
         const formattedDate = date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
         setSelectedDate(formattedDate);

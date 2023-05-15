@@ -8,6 +8,9 @@ import {useQuery} from "react-query"
 import React from "react";
 import {search} from "RemysCookBook/pages/recipe-view/categories";
 import {Recipe} from "RemysCookBook/pages/recipe-view/interface-recipe/recipe";
+import Image from "next/image";
+import Link from "next/link";
+import {el} from "date-fns/locale";
 
 
 const AllRecipes: NextPage = () => {
@@ -24,13 +27,36 @@ const AllRecipes: NextPage = () => {
 
     const recipes: Recipe[] = data?.data ?? []; // ?? [] -> setzt das array auf einn leeres array wenn data nicht exestiert
     const categories: string[] = [];
-    const category = sessionStorage.getItem('category');
-    console.log(category);
+
+    // get category and display it(html)
+    const category:string = sessionStorage.getItem('category')!;
+    const element = document.getElementById("category");
+    console.log(element, category);
+    if(element != null) {
+        element.innerHTML = `${category.toUpperCase()}`;
+    }
+
+    function saveRecipe(recipe: Recipe) {
+        const id :number = recipe.recipeID;
+        const name:string = recipe.recipeName;
+        const preparation :string = recipe.preparation;
+        const rating :number = recipe.rating;
+        const weekId : number = recipe.weekId;
+        const date : string = recipe.recipeDate;
+        sessionStorage.setItem('recipeID', id.toString());
+        sessionStorage.setItem('recipeName', name);
+        sessionStorage.setItem('preparation', preparation);
+        sessionStorage.setItem('rating', rating.toString());
+        sessionStorage.setItem('weekId', weekId.toString());
+        sessionStorage.setItem('recipeDate', date);
+    }
+
     return (
         <>
             <Layout>
                 <div>
-                    <h1 className="headline flex flex-col items-center justify-center font-bold text-3xl text-zinc-50 pt-8">JAPANESE</h1>
+                    <h1 className="headline flex flex-col items-center justify-center font-bold text-3xl text-zinc-50 pt-8"
+                        id="category"></h1>
                 </div>
 
                 <div className="search">
@@ -40,15 +66,21 @@ const AllRecipes: NextPage = () => {
                                onKeyUp={search}/>
                     </form>
 
+                    <div>
+                        <img src={`/public/images/arrow-back.png`} alt=""/>
+                    </div>
+
                     <div className="product-list" id="product-list">
                         {recipes.map((recipe: Recipe) => {
-                            if (!categories.includes(recipe.category)) {
-                                categories.push(recipe.category);
+                            if (recipe.category === category) {
                                 return (
                                     <div className="product" key={recipe.recipeID}>
-                                        <img src={require(`public/images/${recipe.recipeID}.png`).default} alt="" />
+                                        <Image className="grid-suggestion-image rounded-s-3xl"
+                                               src={require(`public/images/${recipe.recipeID}.png`).default} alt=""
+                                               width={100} height={100}></Image>
                                         <div className="p-details">
-                                            <h2><a className="link-to-recipes" href="/recipe-view/recipe-view"></a>{recipe.recipeName}</h2>
+                                            <Link className="link-to-recipes" href="/recipe-view/recipe" onClick={() => saveRecipe(recipe)}>
+                                                <h2>{recipe.recipeName}</h2></Link>
                                         </div>
                                     </div>
                                 );

@@ -5,7 +5,7 @@ const tabs = [
   { icon: '/svg/navBar/suggestions.svg', href: '/menu-suggestions', current: false },
   { icon: '/svg/navBar/recipe.svg', href: '/recipe-view/categories', current: true },
   { icon: '/svg/navBar/favourite.svg', href: '#', current: false },
-  { icon: '/svg/navBar/shopping-list.svg', href: '#', current: false },
+  { icon: '/svg/navBar/shopping-list.svg', href: '+', current: false },
 ];
 
 function classNames(...classes: string[]) {

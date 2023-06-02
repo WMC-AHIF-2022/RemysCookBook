@@ -1,33 +1,13 @@
 {
+  "exclude": [ "public" ],
   "compilerOptions": {
-    "target": "es2017",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "checkJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true,
-    "noUncheckedIndexedAccess": true,
-    "baseUrl": ".",
-    "paths": {
-      "RemysCookBook/*": ["./src/*"]
-    }
+    "target": "es6",                    /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+    "module": "commonjs",               /* Specify what module code is generated. */
+    "moduleResolution": "node",         /* Specify how TypeScript looks up a file from a given module specifier. */
+    "esModuleInterop": true,            /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables `allowSyntheticDefaultImports` for type compatibility. */
+    "strict": true,                     /* Enable all strict type-checking options. */
   },
-  "include": [
-    ".eslintrc.cjs",
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    "**/*.cjs",
-    "**/*.mjs"
-  ],
-  "exclude": ["node_modules"]
+  "ts-node": {
+    "preferTsExts": true
+  }
 }

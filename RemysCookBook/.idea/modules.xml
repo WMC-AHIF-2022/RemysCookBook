@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/RemysCookBook.iml" filepath="$PROJECT_DIR$/.idea/RemysCookBook.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/chatroom-fullstack.iml" filepath="$PROJECT_DIR$/.idea/chatroom-fullstack.iml" />
     </modules>
   </component>
 </project>

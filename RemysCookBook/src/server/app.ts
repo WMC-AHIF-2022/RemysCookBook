@@ -11,7 +11,7 @@ app.use(express.json())
 app.use(express.static(path, options));
 //TODO app.use(routes)
 
-const port: number = 3000;
-app.listen(port, function () {
-    console.log(`Server listening on port ${port}`);
+const port: number = 3005;
+app.listen(port,  () => {
+    console.log(`Server listening on port ${port}`)
 });

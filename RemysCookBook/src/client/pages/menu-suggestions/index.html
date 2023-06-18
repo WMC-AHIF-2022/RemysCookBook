@@ -2,10 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Menu-Suggestions</title>
-    <script src="menu-suggestions-controller.js" type="module"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Suggestions</title>
+    <link rel="stylesheet" href="../../css/menu-suggestions.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="menu-suggestions-controller.js"></script>
 </head>
-<body>
-<h1>TODO</h1>
+<body class="background">
+    <!--Headline-->
+    <section>
+        <div>
+            <h1 class="headline">Menu suggestions</h1>
+        </div>
+    </section>
+    <!--Suggestions-->
+    <section>
+        <div id="listOfSuggestions">
+        </div>
+    </section>
+    <div class="fixed-bottom">
+        <nav class="navbar fixed-bottom">
+            <div class="grid-container-navbar">
+                <div class="grid-item-navbar">
+                    <a class="navbar-brand" href="../weekplaner/index.html">
+                        <img class="navbar-img" src="../../img/calendar.svg" alt="weekplaner">
+                    </a>
+                </div>
+                <div class="grid-item-navbar">
+                    <a class="navbar-brand navbar-item" href="./pages/menu-suggestions/index.html">
+                        <img class="navbar-img" src="../../img/suggestions.svg" alt="menu-suggestions">
+                    </a>
+                </div>
+                <div class="grid-item-navbar">
+                    <a class="navbar-brand navbar-item" href="../recipes/index.html">
+                        <img class="navbar-img" src="../../img/recipe.svg" alt="recipes">
+                    </a>
+                </div>
+                <div class="grid-item-navbar">
+                    <a class="navbar-brand navbar-item" href="../shoppinglist/index.html">
+                        <img class="navbar-img" src="../../img/shopping-list.svg" alt="shoppinglist">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
 </body>
 </html>

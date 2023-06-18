@@ -1,0 +1,26 @@
+.background{
+    background-color: #008080;
+    color: white;
+}
+.navbar{
+    background-color: #D3F0EE;
+    bottom: 0px;
+    width: 100%;
+}
+
+.navbar-img{
+    width: 85%;
+    height: 85%;
+}
+
+
+.grid-container-navbar{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    grid-gap: 5px;
+}
+
+.grid-item-navbar{
+    padding-left: 20px;
+}

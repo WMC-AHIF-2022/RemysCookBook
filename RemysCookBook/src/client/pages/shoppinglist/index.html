@@ -9,18 +9,20 @@
     <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body class="background">
-<!--Headline-->
 <section>
     <div>
         <h1 class="headline">Shoppinglist</h1>
-
-        <button class="button">+
-        </button>
-
-
+        <button id="add-button" class="button">+</button>
     </div>
 </section>
-</body>
+<div id="modal-container" class="modal-container">
+    <div id="modal-content" class="modal-content">
+        <input type="text" id="item-input" placeholder="Enter item name" />
+        <button id="ok-button">OK</button>
+    </div>
+</div>
+
+<ul id="todo-list"></ul>
 
 <div class="fixed-bottom">
     <nav class="navbar fixed-bottom">
@@ -49,4 +51,6 @@
     </nav>
 </div>
 
+<script src="shoppingList.js"></script>
+</body>
 </html>

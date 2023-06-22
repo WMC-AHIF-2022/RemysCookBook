@@ -23,7 +23,7 @@ demo.push(suggestion1);
 demo.push(suggestion2);
 
 window.onload = async () => {
-    //Objekte von sessionstorage holen
+    //alle requestedMenues von der db holen
     const listOfSuggestions = document.getElementById("listOfSuggestions") as HTMLDivElement;
 
     let count: number = 0;
@@ -34,11 +34,13 @@ window.onload = async () => {
         const denyBtn = document.getElementById(`denyBtn${menu.recipeId}`) as HTMLButtonElement;
 
         acceptBtn.addEventListener('click', () => {
-            //eventuell date
+            //backend put endpoint implementieren (accepted-property ändern)
+            //refresh output
         });
 
         denyBtn.addEventListener('click', () => {
-            //sessionstorage löschen mit recipeId
+            //backend aus der tabelle löschen (das eine Rezept)
+            //refresh output
         });
     }
 

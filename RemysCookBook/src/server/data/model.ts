@@ -13,3 +13,10 @@ export interface Recipe {
     rating: number;
     category: string;
 }
+
+export interface Ingredient {
+    ingredientID: number;
+    ingredientName: string;
+    amount: number;
+    unit: string;
+}

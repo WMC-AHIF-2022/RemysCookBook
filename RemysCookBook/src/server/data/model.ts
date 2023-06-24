@@ -1,7 +1,7 @@
 export interface Menu {
     recipeId: number;
     name: string;
-    requestedBy: string;
+    requestedFrom: string;
     date: Date;
     accepted: boolean;
 }

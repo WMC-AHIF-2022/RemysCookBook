@@ -1,2 +1,8 @@
 GET http://localhost:3005/api/recipes
 ###
+
+GET http://localhost:3005/api/recipes/1
+###
+
+GET http://localhost:3005/api/recipes/category/Italian
+###

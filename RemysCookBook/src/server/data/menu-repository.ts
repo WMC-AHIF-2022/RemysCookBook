@@ -8,7 +8,6 @@ export async function getAllMenus(): Promise<Menu[] | undefined> {
     const menus: Menu[] = await db.all<Menu[]>('SELECT * FROM MENU');
     await db.close();
 
-    console.log(menus);
     return menus;
 }
 

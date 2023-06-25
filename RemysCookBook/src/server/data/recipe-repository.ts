@@ -28,6 +28,5 @@ export async function getRecipesByCategory(category: string): Promise<Recipe[] |
     await stmt.finalize();
     await db.close();
 
-    console.log(recipes);
     return recipes;
 }

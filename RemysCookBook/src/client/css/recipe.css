@@ -17,12 +17,20 @@ h1{
     text-align: center;
 }
 
+.headline{
+    text-align: center;
+    font-family: Baloo2, cursive;
+    font-weight: bold;
+    text-shadow: 1px 3px 5px #414046;
+    margin-top: 10%;
+}
+
 body::-webkit-scrollbar{
     display: none;
 }
 
 .recipes{
-    margin: 10%;
+    margin: 5%;
 }
 
 form{
@@ -33,7 +41,7 @@ form{
     flex-direction: row;
     align-items: center;
     background-color: white;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
 form input{

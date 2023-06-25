@@ -21,11 +21,14 @@ window.onload = () => {
             if (itemName && itemName !== "") {
                 const listItem = document.createElement("li");
 
-                const itemNameSpan = document.createElement("span");
+                const itemNameSpan = document.createElement("item-name");
+                itemNameSpan.classList.add("item-name");
                 itemNameSpan.textContent = itemName;
 
                 const deleteButton = document.createElement("button");
-                deleteButton.textContent = "Delete";
+                deleteButton.textContent = "delete";
+                deleteButton.classList.add("delete-button");
+
                 deleteButton.addEventListener("click", () => {
                     todoList.removeChild(listItem);
                 });

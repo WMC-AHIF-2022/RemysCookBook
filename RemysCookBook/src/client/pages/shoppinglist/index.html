@@ -9,20 +9,24 @@
     <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body class="background">
-<section>
-    <div>
-        <h1 class="headline">Shoppinglist</h1>
-        <button id="add-button" class="button">+</button>
-    </div>
-</section>
+
+<h1 class="headline">Shoppinglist</h1>
 <div id="modal-container" class="modal-container">
-    <div id="modal-content" class="modal-content">
-        <input type="text" id="item-input" placeholder="Enter item name" />
-        <button id="ok-button">OK</button>
+        <div id="modal-content" class="modal-content">
+            <input type="text" id="item-input" class="item-input" placeholder="Enter item name" />
+            <button class="ok-button" id="ok-button">+ add item</button>
+        </div>
     </div>
+<div>
+
+<button id="add-button" class="button"></button>
 </div>
 
-<ul id="todo-list"></ul>
+<div class="bg">
+
+    <ul id="todo-list"></ul>
+</div>
+
 
 <div class="fixed-bottom">
     <nav class="navbar fixed-bottom">

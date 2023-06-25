@@ -8,30 +8,49 @@
     width: 100%;
 }
 
+.headline{
+    margin-bottom: 20px;
+}
+
 .navbar-img{
     width: 85%;
     height: 85%;
 }
 
-.button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
-    color: #000;
-    border: none;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    padding-left: 6px;
-    margin-left: 300px;
-    margin-top: 660px;
+.ok-button{
+    border:none;
+    background: #D3F0EE;
+    color: #008080;
+    size: 20px;
 }
 
+.button {
+    position: absolute;
+    size: 1rem;
+    bottom: 20px;
+    left: 320px;
+    right: 0;
+    margin-right: 4rem;
+    margin-bottom: 4rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.25rem;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    background-image: url('../img/plus_button.png');
+}
 
-
-
+.item-input{
+    border-color: #008080;
+    background: #D3F0EE;
+    color: #008080;
+}
 
 .grid-container-navbar{
     display: grid;
@@ -42,6 +61,14 @@
 
 .grid-item-navbar{
     padding-left: 20px;
+}
+
+.bg{
+    background-color: #D3F0EE;
+    size: 4rem;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .modal-container {
@@ -59,7 +86,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
+    background-color: #D3F0EE;
     width: 200px;
     height: 150px;
     border-radius: 8px;
@@ -75,4 +102,19 @@
 
 .modal-content button {
     padding: 5px 10px;
+}
+
+.item-name{
+    font-size: 30px;
+    color: #008080;
+}
+
+.delete-button{
+    border-color: #008080;
+    background-color: #D3F0EE;
+    margin-left: 150px;
+    border-radius: 10px;
+    color: #008080;
+    position: center;
+    margin-bottom: 10px;
 }

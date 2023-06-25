@@ -18,6 +18,7 @@ menusRouter.get("/", async (request, response) => {
     if (typeof menus === "undefined"){
         response.status(StatusCodes.BAD_REQUEST).send("menus are undefined");
     } else {
+        console.log(menus[0].recipeID);
         response.status(StatusCodes.OK).json(menus);
     }
 });

@@ -19,7 +19,7 @@ export async function setMenuAccepted(recipeId: number, username: string){
 
         const db = await DB.createDBConnection();
         const stmt = await db.prepare(`UPDATE Menu SET accepted = ?1 WHERE recipeID = ?2 AND requestedFrom = ?3`);
-        await stmt.bind({1: String(accepted), 2: menu.recipeId, 3: menu.requestedFrom});
+        await stmt.bind({1: String(accepted), 2: menu.recipeID, 3: menu.requestedFrom});
         await stmt.run();
         await stmt.finalize();
         await db.close();

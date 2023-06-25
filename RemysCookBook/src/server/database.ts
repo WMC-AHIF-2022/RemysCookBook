@@ -33,7 +33,7 @@ export class DB {
             ) strict`
         );
         await connection.run(
-            `create table ingredients (
+            `create table if not exists ingredients (
                 ingredientID INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
                 recipeID INTEGER NOT NULL,
                 ingredientName TEXT NOT NULL,

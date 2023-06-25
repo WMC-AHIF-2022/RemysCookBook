@@ -1,0 +1,44 @@
+GET http://localhost:3005/api/menus
+###
+
+GET http://localhost:3005/api/menus/Anna HTTP/1.1
+Content-Type: application/json
+
+{
+  "username": "Anna",
+  "recipeId": 6
+}
+###
+
+
+POST http://localhost:3005/api/menus HTTP/1.1
+Content-Type: application/json
+
+{
+  "recipeID": 3,
+  "recipeName": "Hamburger",
+  "requestedFrom": "Victoria",
+  "date": "2023-06-20T14:43:36.583Z",
+  "accepted": "false"
+}
+
+###
+PATCH http://localhost:3005/api/menus/3 HTTP/1.1
+Content-Type: application/json
+
+{
+  "recipeID": 3,
+  "requestedFrom": "Victoria"
+}
+
+###
+DELETE http://localhost:3005/api/menus
+
+###
+DELETE http://localhost:3005/api/menus/3 HTTP/1.1
+Content-Type: application/json
+
+{
+  "recipeID": 3,
+  "requestedFrom": "Mario"
+}

@@ -2,7 +2,7 @@ import cors from "cors";
 import express from "express";
 import { join } from "path";
 import {DB} from "./database";
-import {menuesRouter} from "./routes/menu-router";
+import {menusRouter} from "./routes/menu-router";
 import {recipesRouter} from "./routes/recipes-router";
 import {ingredientsRouter} from "./routes/ingredients-router";
 
@@ -15,7 +15,7 @@ app.use(express.json())
 app.use(express.static(path, options));
 app.use(cors());
 //TODO app.use(routes)
-app.use("/api/menues", menuesRouter);
+app.use("/api/menus", menusRouter);
 app.use("/api/recipes", recipesRouter);
 app.use("/api/ingredients", ingredientsRouter);
 

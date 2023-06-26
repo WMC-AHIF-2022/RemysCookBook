@@ -1,0 +1,83 @@
+.add-suggestion-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    font-size: 45px;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+}
+  
+.headline {
+    text-align: center;
+    font-family: Baloo2, cursive;
+    font-weight: bold;
+    text-shadow: 1px 3px 5px #414046;
+    margin-top: 10%;
+}
+  
+.grid-container-weekplaner {
+    display: grid;
+    grid-template-columns: 30% auto auto auto; /* Adjusted grid-template-columns */
+    grid-template-rows: auto auto auto auto;
+    background-color: #d3f0ee;
+    grid-gap: 5px;
+    box-shadow: 1px 4px 8px #686770;
+    border-radius: 25px;
+    width: 350px;
+    height: 120px; /* Adjusted height */
+    margin: auto;
+}
+  
+.grid-item-weekplaner-picture {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    border-radius: 25px 0px 0px 25px;
+}
+  
+.grid-item-weekplaner-recipe-name {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+  
+.grid-item-suggestions-user {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+  
+.menu-cover {
+    width: 122px;
+    height: 120px; /* Adjusted height */
+    border-radius: 25px 0px 0px 25px;
+}
+  
+.weekplaner-recipe-name {
+    font-size: 28px;
+    color: #008080;
+    font-family: "Baloo2", cursive;
+    padding-top: 15px;
+    padding-left: 5px;
+    margin: 0;
+}
+  
+.weekplaner-date {
+    font-size: 30px;
+    color: white;
+    font-family: "Baloo2", cursive;
+    padding-top: 15px;
+    padding-left: 10px; 
+    margin-bottom: 10px; 
+  }
+  

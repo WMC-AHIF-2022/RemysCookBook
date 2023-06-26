@@ -61,14 +61,31 @@ window.onload = async () => {
     return date < today;
   }
 
+  function getWeekday(date: Date): string {
+    const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    const weekdayIndex = date.getDay();
+    return weekdays[weekdayIndex];
+  }
+
+  function formatDateString(dateString: string): string {
+      const year = dateString.substring(0, 4);
+      const month = dateString.substring(5, 7);
+      const day = dateString.substring(8, 10);
+
+      const date = new Date(dateString.substring(0,10));
+      const weekday = getWeekday(date);
+
+      return `${weekday}, ${day}.${month}.${year}`;
+  }
+
   function printWeekmenus(menu: Menu) {
     weekMenus.innerHTML += `<div style="margin-bottom: 10%;"></div>
     <div class="date-weekplaner"> 
-      <h1 id="textDate" class="weekplaner-date">${menu.date}</h1>
+      <h1 id="textDate" class="weekplaner-date">${formatDateString(menu.date)}</h1>
     </div>
     <div class="grid-container-weekplaner">
         <div class="grid-item-weekplaner-picture">
-            <img id="imgRecipe" class="menu-cover" src="../../img/${menu.recipeID}.jpg" alt="${menu.recipeID}">
+            <img id="imgRecipe" class="menu-cover" src="../../img/${menu.recipeID}.png" alt="${menu.recipeID}">
         </div>
         <div class="grid-item-weekplaner-recipe-name">
             <h1 id="textRecipeName" class="weekplaner-recipe-name">${menu.recipeName}</h1>

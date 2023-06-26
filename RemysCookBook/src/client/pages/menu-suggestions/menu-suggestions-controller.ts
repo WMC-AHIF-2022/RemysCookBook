@@ -82,7 +82,7 @@ window.onload = async () => {
         listOfSuggestions.innerHTML += `<div style="margin-bottom: 10%;"></div>
         <div class="grid-container-suggestions">
             <div class="grid-item-suggestions-picture">
-                <!--<img id="imgRecipe" class="menu-cover" src="../../img/${menu.recipeID}.jpg" alt="${menu.recipeID}">-->
+                <img id="imgRecipe" class="menu-cover" src="../../img/${menu.recipeID}.png" alt="${menu.recipeID}">
             </div>
             <div class="grid-item-suggestions-recipe-name">
                 <h1 id="textRecipeName" class="suggestions-recipe-name">${menu.recipeName}</h1>

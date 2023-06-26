@@ -38,7 +38,7 @@ window.onload = async () => {
               <h1>Preparation:</h1>
               <h2>${recipe.preparation}</h2>
               <div class="add-to-suggestion-button">
-                <button type="button" class="btn btn-light" onclick="await addSuggestionToMenu(${recipe.recipeID}, ${recipe.recipeID}, ${users[randomNum]})" style="align-items: center">Suggestion</button>
+                <button type="button" class="btn btn-light" id="suggestion-button" style="align-items: center">Suggestion</button>
               </div>
             </div>
           </div>
@@ -46,6 +46,11 @@ window.onload = async () => {
       </div>
     `);
     }
+
+    const suggestionButton = document.getElementById("suggestion-button") as HTMLButtonElement;
+    suggestionButton.addEventListener('click', async () => {
+        await addSuggestionToMenu(recipe.recipeID, recipe.recipeName, users[randomNum]);
+    })
 };
 
 async function addSuggestionToMenu(recipeId: number, recipeName: string, user: string) {
@@ -59,4 +64,6 @@ async function addSuggestionToMenu(recipeId: number, recipeName: string, user: s
     }
 
     await fetchRestEndpoint(`${apiUrl}/menus`, "POST", menu);
+
+    alert("Successfully added to Menu Suggestions");
 }

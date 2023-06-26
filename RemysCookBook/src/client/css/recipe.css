@@ -139,3 +139,59 @@ form i{
     font-size: 250%;
     margin-left: auto;
 }
+
+.link-to-recipes {
+    font-size: 200%;
+    color: #ffff;
+}
+
+/* recipe view */
+
+.recipe {
+    color: #008d8d;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container h2{
+    font-size: 300%;
+    color: #ffff;
+}
+
+.center-top {
+    align-self: flex-start;
+}
+
+.container img{
+    width: 75%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+.preparation-container {
+    color: #008d8d;
+    background-color: #008d8d;
+    align-items: normal;
+    border-radius: 2%;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 10%;
+}
+
+.content {
+    padding-bottom: 8%;
+    font-size: 50%;
+}
+
+.add-to-suggestion-button .btn{
+    font-size: 400%;
+    color: #008d8d;
+    background-color: #D3F0EE;
+    text-align: center;
+
+}
